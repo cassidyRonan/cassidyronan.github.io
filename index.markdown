@@ -26,9 +26,28 @@ title: Ronan Cassidy - Home
         <div class="hero-body">
           <div class="container">
             <div class="columns is-variable is-8">
-                <div class="column  is-one-third"><div class="blueBackground centerText roundedPanel">1</div></div>
-                <div class="column  is-one-third"><div class="blueBackground centerText roundedPanel">1</div></div>
-                <div class="column  is-one-third"><div class="blueBackground centerText roundedPanel">1</div></div>
+
+                <div class="column  is-one-third">
+                  <div class="blueBackground centerText roundedPanel">
+                    <img src="assets\img\landing\mapIcon.png" class="panelImage"/>
+                    <p class="bebasNeue whiteText fontMedium" >Latest Projects</p>
+                  </div>
+                </div>
+                
+                <div class="column  is-one-third">
+                  <div class="blueBackground centerText roundedPanel">
+                  <img src="assets\img\landing\mapIcon.png" class="panelImage"/>
+                  <p class="bebasNeue whiteText fontMedium" >The Blog</p>
+                </div>
+              </div>
+                
+                <div class="column  is-one-third">
+                  <div class="blueBackground centerText roundedPanel">
+                  <img src="assets\img\landing\mapIcon.png" class="panelImage"/>
+                  <p class="bebasNeue whiteText fontMedium" >About Me</p>
+                </div>
+              </div>
+
               </div>
           </div>
         </div>

@@ -208,3 +208,8 @@ border-radius: 25px;
     bottom: 10px;
     right: 10px;
 }
+
+.panelImage{
+    max-width: 100%;
+    max-height: 100%;;
+}
