@@ -14,347 +14,64 @@
     <link rel="stylesheet" href="CSS/ronan.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          // Get all "navbar-burger" elements
-          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-          // Check if there are any navbar burgers
-          if ($navbarBurgers.length > 0) {
-            // Add a click event on each of them
-            $navbarBurgers.forEach( el => {
-              el.addEventListener('click', () => {
-                // Get the target from the "data-target" attribute
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-  
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-              });
-            });
-          }
-        });
-      </script>
-
   </head>
 
   <body class=" fontNormal offWhiteBackground">
-    <div class="wrapper offWhiteBackground">
-    <nav class="navbar is-spaced bebasNeue whiteBackground" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a href="index.html">
-                <img  src="Images/rcLogo.png" width="100" height="70" alt="Rónán Cassidy">
-            </a>
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarHamburger">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-
-        </div>
-
-        <div id="navbarHamburger" class="navbar-menu">
-            <div class="navbar-start">
-              <a href="index.html" class="navbar-item">
-                Home
+      <div class="wrapper offWhiteBackground">
+        
+        <nav class="navbar is-spaced bebasNeue whiteBackground" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+              <a href="index.html">
+                  <img src="Images/rcLogo.png" alt="Rónán Cassidy" width="100" height="70">
               </a>
-        
-              <a href="Views/blog.html" class="navbar-item">
-                Blog
-              </a>
-
-              <a href="Views/aboutme.html" class="navbar-item">
-                About Me
-              </a>
-
-              <!--
-              <a href="Views/contactme.html" class="navbar-item">
-                Contact Me
-              </a>-->
-        
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a href="Views/unityprojects.html" class="navbar-link">
-                  Unity
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <p class="navbar-item" ><i>Featured Projects</i></p>
-                  <a href="Views/unityprojects.html#projectCrescent" class="navbar-item">
-                    Project Crescent
-                  </a>
-        
-                  <!--<hr class="navbar-divider">-->
-                  <a href="Views/unityprojects.html#mechCommanderVR" class="navbar-item">
-                    Mech Commander VR
-                  </a>
-                </div>
-              </div>
-
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a href="Views/csharpprojects.html" class="navbar-link">
-                  C#
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <p class="navbar-item" ><i>Featured Projects</i></p>
-                  <a href="Views/csharpprojects.html#ims" class="navbar-item">
-                    Inventory Management System
-                  </a>
-        
-                </div>
-              </div>
-
-
             </div>
-          </div>
-      </nav>
+        </nav>
 
-      <section class="hero bebasNeue is-medium imageBackground ">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title fontLarge center">
-              Software Developer
-            </h1>
-            <h2 class="subtitle fontHeroSubtitle center has-text-white">
-              Bringing creativity into coding.
-            </h2>
-            <div class="center">
-              <a class="button is-info is-rounded is-large" href="https://www.linkedin.com/in/ronan-cassidy/">LinkedIn</a>
-              <a class="button is-info is-rounded is-large marginLeft" href="https://github.com/cassidyRonan">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-
-
-      <!-- <section class="section offWhiteBackground">
-        <div class="columns">
-          <div class="column is-4">
-            <div class="box">
-              <h2 class="title bebasNeue">About Ronan</h2>
-              <p>Ronan is a software and game developer based in Galway, Ireland, which means he gets to enjoy the many rain showers that grace the county. With a curiosity about technology for as long as he can remember, using computers from an early age, it's always been clear that he would end up in the software industry.</p>
-              <br/>
-              <p>Technology captured his curiosity at that young age, and he has been chasing it for years now, his journey led him to the Institute of Technology Sligo where he graduated with a Bachelor of Science degree in Computing with a specialisation in Games Development. However, he has not just focused on game development, he has also delved into software development and worked on a variety of projects.</p>
-              <br/>
-              <a class="button is-info floatRight bebasNeue" href="Views/aboutme.html">Learn More About Ronan</a>
-              <br class="clear" />
-            </div>
-          </div>
-
-          <div class="column is-8">
-            <div class="box">
-            <h2 class="title bebasNeue">Currently working on...</h2>
-
-            <article>
-
-            </article>
-
-              <a class="button is-info floatRight bebasNeue" href="Views/blog.html#latest">Read More</a>
-              <br class="clear" />
-            </div>
-          </div>
-
-
-        </div>
-      </section> -->
-
-      <section class="section columns offWhiteBackground">
-        <div class="tile is-ancestor">
-
-          <div class="tile">
-            
-            <div class="tile is-parent is-4">
-              <div class="tile is-child box column ">
-                <p class="title bebasNeue">About Ronan</p>
-                  <p>Ronan is a software and game developer based in Galway, Ireland, which means he gets to enjoy the many rain showers that grace the county. He recently graduated from the Institute of Technology Sligo with a Bachelor of Science degree in Computing with a specialisation in Games Development. He is returning to complete a BSc Honours degree in Software Development for an additional year and will graduate in the Summer of 2021.</p>
-                  <br/>
-                  <a class="button is-info floatRight bebasNeue" href="Views/aboutme.html">Learn More About Ronan</a>
-                  <br class="clear" />
-              </div>
-            </div>
-
-            <div class="tile is-parent">
-              <div class="tile relative is-child column box">
-                <p class="title bebasNeue">Currently working on...</p>
-                <!-- Currently working on info here-->
-                <p class="subtitle fontNormal bebasNeue">Project Crescent - Unity 3D Game</p>
-                <p>A 3D action game with RPG elements in a fantasy setting developed in the Unity Engine. The game is being developed as part of the final project of my BSc in Computing with a specialization in Game Development along with a fellow classmate. I am using this project as an oppurtunity to demonstarte my ability in creating various game systems from scratch as well as using Unity's new Input System which is currently in the preview stage.</p>
-                <br/>
-                <p>To learn more about the project, you can check out the development blog by clicking on read more to be redirected to the site. </p>
-                <a class="button is-info absoluteBottom bebasNeue" href="https://s00177754.github.io/PlacementProject/index.html">Read More</a>
-                <br class="clear" />
+        <section class="hero bebasNeue is-medium imageBackground ">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title fontLarge center">
+                Site Revamp In Progress
+              </h1>
+              <h2 class="subtitle fontHeroSubtitle center has-text-white">
+                Try Again Later!
+              </h2>
+              <div class="center">
+                <a class="button is-info is-rounded is-large" href="https://www.linkedin.com/in/ronan-cassidy/">LinkedIn</a>
+                <a class="button is-info is-rounded is-large marginLeft" href="https://github.com/cassidyRonan">GitHub</a>
               </div>
             </div>
           </div>
+        </section>
 
-        </div>
-    </section>
-
-    <section class="section columns is-multiline darkOffWhiteBackground">
-
-      <div class="tile is-ancestor is-12">
-        
-        <div class="tile">
-          <div class="tile is-parent">
-            <div class="tile is-child column ">
-              <h1 class ="center title bebasNeue fontLarge blueText" >Featured Projects</h1>
-
-            </div>
-          </div>
-        </div>
+        <div class="push offWhiteBackground"></div>
         
       </div>
 
-        <div class="tile is-ancestor is-12">
+    <footer class="bebasNeue footer fixed-footer background">
 
-          <div class="tile">
-            
-            <div class="tile is-parent is-4">
-              <div class="tile relative is-child box column ">
-                <p class="title center bebasNeue">Project Crescent</p>
+      <div class="content background">
 
-                <figure class="image is-16by9">
-                  <img src="Images/projectCrescent.png">
-                </figure>
-                <p class="bebasNeue fontNormal">Framework: <span class="barlow" >Unity Game Engine with C#</span></p>
-                <p class="bebasNeue fontNormal">Description:</p>
-                <p>Project Crescent is a 3D action RPG game with a modern fantasy setting being developed in the Unity game engine. The game will be released on the Itch.IO marketplace in the Summer of 2020 as part of a placement substitution project and is a collaboration with a fellow student from IT Sligo.</p>
-                <br/>
+        <div class="columns background">
 
-                <a class="button is-info absoluteBottom bebasNeue" href="Views/unityprojects.html#projectCrescent">Read More</a>
-                <br class="clear" />
+          <div class="column is-one-third center">
+            <a href="https://www.linkedin.com/in/ronan-cassidy/" class="has-text-white center"><U>LinkedIn</U></a>
+          </div>
 
-              </div>
-            </div>
+          <div class="column is-one-third center">
+            <a href="https://github.com/cassidyRonan" class="has-text-white center"><U>GitHub</U></a>
+          </div>
 
-            <div class="tile is-parent is-4">
-              <div class="tile relative is-child box column ">
-                <p class="title center bebasNeue">Inventory Management System</p>
-                
-                <figure class="image is-16by9">
-                  <img src="Images/ANS_Equipment_System.png">
-                </figure>
-
-                <p class="bebasNeue fontNormal">Framework: <span class="barlow" >WPF & C# 7.0</span></p>
-                <p class="bebasNeue fontNormal">Description:</p>
-                <p>IMS is an inventory management system developed for <a href="https://www.ansndt.com/">Advanced NDT Solutions</a> to manage their equipment and stock, this software handles for multiple employees and works in tandem with a barcode scanner to make the checking in and out of items simplistic. </p>
-                <br/>
-                <a class="button is-info absoluteBottom bebasNeue" href="Views/csharpprojects.html#ims">Read More</a>
-                <br class="clear" />
-
-              </div>
-            </div>
-
-            <div class="tile is-parent is-4">
-              <div class="tile relative is-child box column ">
-                <p class="title center bebasNeue">Mech Commander VR</p>
-                
-                <figure class="image is-16by9">
-                  <img src="Images/MechCommanderVR_CommandCenter.jpg">
-                </figure>
-
-                <p class="bebasNeue fontNormal">Framework: <span class="barlow" >Unity Game Engine with C#</span></p>
-                <p class="bebasNeue fontNormal">Description:</p>
-                <p>Mech Commander VR is a real time strategy virtual reality game with a modern futuristic setting developed in the Unity game engine with Steam VR. The game was developed by a small team of three including myself as a vertical slice to demonstrate the potential for a real time strategy game in virtual reality and also to further expand my skill set.</p>
-                <br/>
-                <a class="button is-info absoluteBottom bebasNeue" href="Views/unityprojects.html#mechCommanderVR">Read More</a>
-                <br class="clear" />
-
-              </div>
-            </div>
-
+          <div class="column is-one-third center">
+            <a href="mailto:ronancassidy.work@gmail.com" class="has-text-white center"><U>Get In Touch</U></a>
           </div>
 
         </div>
-    </section>
 
-    <section class="section columns is-multiline offWhiteBackground">
-
-      <div class="tile is-ancestor is-12">
-        
-        <div class="tile">
-          <div class="tile is-parent">
-            <div class="tile is-child column ">
-              <h1 class ="center title bebasNeue fontLarge orangeText" >Work History & Volunteering</h1>
-
-            </div>
-          </div>
-        </div>
         
       </div>
 
-        <div class="tile is-ancestor is-12">
-
-          <div class="tile">
-            
-            <div class="tile is-parent is-6">
-              <div class="tile relative is-child box column ">
-                <p class="title center bebasNeue">Student Mentor</p>
-                <p class="bebasNeue fontNormal">Location: Institute of Technology Sligo, County Sligo</p>
-                <p class="barlow fontSmall">September 2018 - March 2019</p>
-                <br/>
-                <p class="fontSmall barlow">I participated in the Student Mentoring program to help assist incoming first year computing students settle into college life and help them integrate into the course with ease. This included tasks such as assisting new students with accessing college services and facilities, how to turn in assignments and seek extensions, etc.</p>
-                <p class="fontSmall barlow">As part of the program, I recieved training to further my interpersonal skills such as how to fufill a leadership roll, orginisational and communication skills to ensure the smooth running of weekly meetings with my mentees.</p>
-                
-                <a class="button is-info absoluteBottom bebasNeue" href="Views/csharpprojects.html#ims">View Certificate</a>
-                <br class="clear" />
-
-              </div>
-            </div>
-
-            <div class="tile is-parent is-6">
-              <div class="tile relative is-child box column ">
-                <p class="title center bebasNeue">Software Developer</p>
-                <p class="bebasNeue fontNormal">Location: Advanced NDT Solutions, County Westmeath</p>
-                <p class="barlow fontSmall">June 2019 - August 2019</p>
-                <br/>
-                <p class="fontSmall barlow">In the Summer of 2019, I developed an inventory management system to replace ANS's previous inventory system which was an Access database file. To replace the access database, I developed a Windows Presentation Foundation app as a solo project to increase functionality of the inventory management system and keep track of what items are checked out by employees, the location of the items, etc.</p>
-
-                <a class="button is-info absoluteBottom bebasNeue" href="Views/csharpprojects.html#ims">Inventory Management System</a>
-                <br class="clear" />
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-    </section>
-
-      <div class="push offWhiteBackground"></div>
-    </div>
-
-<footer class="bebasNeue footer fixed-footer background">
-
-  <div class="content background">
-
-    <div class="columns background">
-
-      <div class="column is-one-quarter center">
-        <a href="https://www.linkedin.com/in/ronan-cassidy/" class="has-text-white center"><U>LinkedIn</U></a>
-      </div>
-
-      <div class="column is-one-quarter center">
-        <a href="https://github.com/cassidyRonan" class="has-text-white center"><U>GitHub</U></a>
-      </div>
-
-      <div class="column is-one-quarter center">
-        <a href="https://www.youtube.com/channel/UCWjbKuN23SvYb1J8IMJzkYA/" class="has-text-white center"><U>YouTube</U> (Coming Soon)</a>
-      </div>
-
-      <div class="column is-one-quarter center">
-        <a href="mailto:ronancassidy.work@gmail.com" class="has-text-white center"><U>Get In Touch</U></a>
-      </div>
-
-    </div>
-
-    
-  </div>
-
-</footer>
+    </footer>
 
   </body>
 </html>
