@@ -10,70 +10,248 @@
     <meta name="keywords" content="Programming, Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="CSS/bulma.css"> 
-    <link rel="stylesheet" href="CSS/ronan.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/bulma.css">
+    <link rel="stylesheet" href="CSS/custom.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@0;1&family=Righteous&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+        });
+      });
+}
+
+});
+    </script>
 
   </head>
 
-  <body class=" fontNormal offWhiteBackground">
-      <div class="wrapper offWhiteBackground">
-        
-        <nav class="navbar is-spaced bebasNeue whiteBackground" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-              <a href="index.html">
-                  <img src="Images/rcLogo.png" alt="Rónán Cassidy" width="100" height="70">
-              </a>
-            </div>
-        </nav>
+  <body>
+    
+    <nav id="navbar" class="navbar " role="navigation" aria-label="main navigation">
+    
+      <div class="navbar-brand">
 
-        <section class="hero bebasNeue is-medium imageBackground ">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title fontLarge center">
-                Site Revamp In Progress
-              </h1>
-              <h2 class="subtitle fontHeroSubtitle center has-text-white">
-                Try Again Later!
-              </h2>
-              <div class="center">
-                <a class="button is-info is-rounded is-large" href="https://www.linkedin.com/in/ronan-cassidy/">LinkedIn</a>
-                <a class="button is-info is-rounded is-large marginLeft" href="https://github.com/cassidyRonan">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- Logo in navbar-brand so its present in mobie and desktop-->
+        <a class="navbar-item ">
+          <img src="Images/navbarLogo.png" width="75" height="40" alt="Ronan Cassidy">
+        </a>
 
-        <div class="push offWhiteBackground"></div>
-        
+        <!-- Hamburger Menu Items-->
+            <a role="button" class="navbar-burger " data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
       </div>
-
-    <footer class="bebasNeue footer fixed-footer background">
-
-      <div class="content background">
-
-        <div class="columns background">
-
-          <div class="column is-one-third center">
-            <a href="https://www.linkedin.com/in/ronan-cassidy/" class="has-text-white center"><U>LinkedIn</U></a>
-          </div>
-
-          <div class="column is-one-third center">
-            <a href="https://github.com/cassidyRonan" class="has-text-white center"><U>GitHub</U></a>
-          </div>
-
-          <div class="column is-one-third center">
-            <a href="mailto:ronancassidy.work@gmail.com" class="has-text-white center"><U>Get In Touch</U></a>
-          </div>
-
+      
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <!-- navbar items -->
+          
         </div>
+      
+        <div class="navbar-end">
+          <!-- navbar items -->
 
-        
+          <a class="navbar-item righteous">
+            Portfolio
+          </a>
+
+          <a class="navbar-item righteous">
+            Development Blogs
+          </a>
+
+          <a href="https://www.linkedin.com/in/ronan-cassidy/" class="navbar-item righteous">
+            Contact
+          </a>
+        </div>
       </div>
 
-    </footer>
+
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero is-medium bannerImg">
+      <div class="hero-body center">
+        <p class="title righteous has-text-white center title is-3">
+          Software & Game Developer
+        </p>
+        <p class="subtitle has-text-white center title is-4">
+          Bringing Creativity Into Coding
+        </p>
+      </div>
+    </section>
+
+    
+
+
+    <!-- Bio Header -->
+    <section class="columns columnsPadding">
+      <section class="column">
+        <section class="">
+          <h1 class="title righteous">Hi I'm Ronan Cassidy!</h1>
+        </section>
+      </section>
+    </section>
+
+    <!-- Bio Columns -->
+    <section class="columns columnsPadding">
+      <section class="column">
+
+        <!-- Bio Card -->
+        <article class="box columns">
+          	<article class="column is-three-quarters">
+              <p class="bold subtitle righteous">About Me</p>
+              <p>Hello! My name is Ronan Cassidy and I am fascinated with how code can be used to solve a variety of problems, it's likely due to my love of puzzles. My coding journey began back in 2012 when I began attending a local Coderdojo and was introduced to Scratch, along the way I've learned various languages, agile development and even how to utilise cloud infrastructure.</p>
+              <br/>
+              <p>Along my journey, I have graduated from the Institute of Technology Sligo with a BSc in Games Development at the top of my class, recieveing the Prize Winner Award for the highest GPA in the class and then again with a BSc (Honours) in Software Development a year later. In that time I have also developed an inventory management application for use in the engineering industry by myself as requested by a client. </p>
+              <br/>
+              <p>These days I am currently on the hunt for a software development position which provides an oppurtunity to learn and develop new and old skills alike while solving problems with innovative software solutions. I pride myself on my ability to learn new technologies quickly to utilise them in the project I am working on, I may not know it all but I am prepared to learn it all.</p>
+            </article>
+            
+            <article class="column is-one-quarter">
+              <figure class="image">
+                <img class="is-rounded is-square photoMax" src="./Images/Profile.jpg">
+              </figure>
+            </article>
+          
+        </article>
+      
+      </section>
+    
+    </section>
+
+    <section class="columns columnsPadding">
+      <section class="column">
+        <p class="bold subtitle righteous">Links:</p>
+
+        <!-- Project Card -->
+        <article class="box columns">
+          	<article class="column is-one-quarter">
+              <a href="https://www.linkedin.com/in/ronan-cassidy/" class="button is-info is-rounded is-fullwidth">LINKEDIN</a>
+           </article>
+            
+           <article class="column is-one-quarter">
+            <a href="https://github.com/cassidyRonan" class="button is-success is-rounded is-fullwidth">GITHUB</a>
+         </article>
+
+         <article class="column is-one-quarter">
+          <a class="button is-danger is-rounded is-fullwidth">PORTFOLIO</a>
+       </article>
+
+       <article class="column is-one-quarter">
+        <a href="mailto:ronanmcassidy@gmail.com" class="button is-warning is-rounded is-fullwidth">EMAIL ME</a>
+     </article>
+          
+        </article>
+      
+      </section>
+    
+    </section>
+
+
+<!-- Featured Projects Header -->
+<section class="columns columnsPadding">
+  <section class="column">
+    <section class="">
+      <h1 class="title righteous">Featured Projects</h1>
+      <h2 class="subtitle">Here is a look at some of my work!</h2>
+    </section>
+  </section>
+</section>
+  
+<!-- Featured Projects Columns -->
+<section class="columns columnsPadding">
+  <section class="column">
+
+    <!-- Project Card -->
+    <article class="box">
+
+      <p class="bold subtitle center righteous">Inventory Manager</p>
+      <figure class="image is-square">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+      <br/>
+      <p>A Windows Presentation Foundation (WPF) application developed for a client to manage and track both equipment and stock in their business. The application was designed using Material Design guidelines.</p>
+      <br/>
+      <a class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
+    </article>
+  
+  </section>
+
+
+  <section class="column">
+    <article class="box">
+
+      <p class="bold subtitle center righteous">AR Knight</p>
+      <figure class="image is-square">
+        <img class="" src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+      <br/>
+      <p>An augmented reality game developed as part of my fourth year project in my BSc (Honours) in Software Development. The application is currently in closed beta and will be released on Google Play soon.</p>
+      <br/>
+      <a class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
+    </article>
+  </section>
+  
+
+  <section class="column">
+    <article class="box">
+
+      <p class="bold subtitle center righteous">Mech Commander VR</p>
+      <figure class="image is-square">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+      <br/>
+      <p>A virtual reality, real-time strategy game created in the Unity game engine; created as a proof of concept as part of my third year project in my BSc in Computing in Games Development at IT Sligo.</p>
+      <br/>
+      <a class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
+    </article>
+  </section>
+  
+
+  <section class="column">
+    <article class="box">
+
+      <p class="bold subtitle center righteous">Cavalry</p>
+      <figure class="image is-square">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+      <br/>
+      <p>A visual studio extension to allow users to select a block of code and send it to a Discord channel to seek aid from fellow programmers. There are also plans to integrate Slack in a future release.</p>
+      <br/>
+      <a class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
+    </article>
+  </section>
+
+</section>
+
+
 
   </body>
+
 </html>
 
 
