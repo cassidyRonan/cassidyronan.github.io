@@ -91,3 +91,9 @@
   margin: 0 auto !important; 
 	float: none !important;
 }
+
+.projectPhoto{
+  max-height: 340px;
+  object-fit:contain;
+  width: 100%;
+}
