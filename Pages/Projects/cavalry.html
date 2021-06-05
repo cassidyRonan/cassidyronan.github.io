@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ronan Cassidy - Cavalry</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Rónán Cassidy">
+    <meta name="description" content="Portfolio page for portfolio site for Rónán Cassidy">
+    <meta name="keywords" content="Programming, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../CSS/bulma.css">
+    <link rel="stylesheet" href="../../CSS/custom.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@0;1&family=Righteous&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+        });
+      });
+}
+
+});
+    </script>
+
+  </head>
+
+  <body>
+    
+    <nav id="navbar" class="navbar " role="navigation" aria-label="main navigation">
+    
+      <div class="navbar-brand">
+
+        <!-- Logo in navbar-brand so its present in mobie and desktop-->
+        <a href="../../index.html" class="navbar-item ">
+          <img src="../../Images/navbarLogo.png" width="75" height="40" alt="Ronan Cassidy">
+        </a>
+
+        <!-- Hamburger Menu Items-->
+            <a role="button" class="navbar-burger " data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+      </div>
+      
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <!-- navbar items -->
+          
+        </div>
+      
+        <div class="navbar-end">
+          <!-- navbar items -->
+
+          <a href="../../index.html" class="navbar-item righteous">
+            Home
+          </a>
+
+          <a href="../portfolio.html" class="navbar-item righteous">
+            Portfolio
+          </a>
+
+          <a href="../blog.html" class="navbar-item righteous">
+            Blogs
+          </a>
+
+          <a href="https://www.linkedin.com/in/ronan-cassidy/" class="navbar-item righteous">
+            Contact
+          </a>
+        </div>
+      </div>
+
+
+    </nav>
+
+    <section class="columns columnsPadding">
+        <section class="column">
+          <!-- Project Card -->
+          <article class="box columns">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../portfolio.html#indev">In Development</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Cavalry</a></li>
+              </ul>
+            </nav>
+          </article>
+        
+        </section>
+      
+      </section>
+
+
+    <!-- Hero Banner -->
+    <section class="hero bannerImg">
+      <div class="hero-body center">
+        <p class="title righteous has-text-white center title is-3">
+          Cavalry
+        </p>
+      </div>
+    </section>
+
+    
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Ronan Cassidy &#169; 2021
+    </p>
+  </div>
+</footer>
+
+  </body>
+
+</html>
