@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ronan Cassidy - Contact Me</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Rónán Cassidy">
+    <meta name="description" content="Portfolio site for Rónán Cassidy">
+    <meta name="keywords" content="Programming, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../CSS/bulma.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@0;1&family=Righteous&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+        });
+      });
+}
+
+});
+    </script>
+
+  </head>
+
+  <body>
+    
+    <nav id="navbar" class="navbar " role="navigation" aria-label="main navigation">
+    
+      <div class="navbar-brand">
+
+        <!-- Logo in navbar-brand so its present in mobie and desktop-->
+        <a class="navbar-item " href="../index.html">
+          <img src="../Images/navbarLogo.png" width="75" height="40" alt="Ronan Cassidy">
+        </a>
+
+        <!-- Hamburger Menu Items-->
+            <a role="button" class="navbar-burger " data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+      </div>
+      
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <!-- navbar items -->
+          
+        </div>
+      
+        <div class="navbar-end">
+          <!-- navbar items -->
+
+          <a href="../index.html" class="navbar-item righteous">
+            Home
+          </a>
+
+          <a href="./portfolio.html" class="navbar-item righteous">
+            Portfolio
+          </a>
+
+          <a href="./blog.html" class="navbar-item righteous">
+            Blog
+          </a>
+
+          
+        </div>
+      </div>
+
+
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero  bannerImg">
+      <div class="hero-body center">
+        <p class="title righteous has-text-white center title is-3">
+          Contact Me
+        </p>
+      </div>
+    </section>
+
+    
+
+
+    <!-- Bio Header -->
+    <section class="columns columnsPadding">
+      <section class="column">
+        <section class="">
+          <h1 class="title righteous">Bio:</h1>
+        </section>
+      </section>
+    </section>
+
+    <!-- Bio Columns -->
+    <section class="columns columnsPadding">
+      <section class="column is-9 columnsPadding">
+
+        <!-- Bio Card -->
+        <article class="box columns ">
+          	<article class="column is-three-quarters">
+              <p class="bold subtitle righteous">About Me</p>
+              <p>Hello! My name is Ronan Cassidy and I am fascinated with how code can be used to solve a variety of problems, it's likely due to my love of puzzles. My coding journey began back in 2012 when I began attending a local Coderdojo and was introduced to Scratch, along the way I've learned various languages, agile development and even how to utilise cloud infrastructure.</p>
+              <br/>
+              <p>Along my journey, I have graduated from the Institute of Technology Sligo with a BSc in Games Development at the top of my class, recieveing the Prize Winner Award for the highest GPA in the class and then again with a BSc (Honours) in Software Development a year later. In that time I have also developed an inventory management application for use in the engineering industry by myself as requested by a client. </p>
+              <br/>
+              <p>These days I am currently on the hunt for a software development position which provides an oppurtunity to learn and develop new and old skills alike while solving problems with innovative software solutions. I pride myself on my ability to learn new technologies quickly to utilise them in the project I am working on, I may not know it all but I am prepared to learn it all.</p>
+            </article>
+            
+            <article class="column is-one-quarter">
+              <figure class="image">
+                <img class="is-rounded is-square photoMax" src="../Images/Profile.jpg">
+              </figure>
+            </article>
+          
+        </article>
+      </section>
+
+      <section class="column is-3 ">
+        <article class="box">
+            <table>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><a href="mailto:ronanmcassidy@gmail.com">ronanmcassidy@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>+353 086 236 0189</td>
+                </tr>
+                <tr>
+                    <td><strong>LinkedIn:&nbsp;&nbsp;</strong></td>
+                    <td><a href="https://www.linkedin.com/in/ronan-cassidy/">linkedin.com/in/ronan-cassidy/</a></td>
+                </tr>
+                <tr>
+                    <td><strong>GitHub:&nbsp;&nbsp;</strong></td>
+                    <td><a href="https://github.com/cassidyRonan">github.com/cassidyRonan</a></td>
+                </tr>
+                <tr>
+                    <td><strong>CV:</strong></td>
+                    <td><a href="../appendices/RCassidyCV.pdf">Click To View</a></td>
+                </tr>
+            </table>    
+            <br/>
+            <p>Currently seeking job oppurtunities.</p>
+        </article>
+      </section>
+    
+    </section>
+
+    
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Ronan Cassidy &#169; 2021
+    </p>
+  </div>
+</footer>
+
+  </body>
+
+</html>
+
+
