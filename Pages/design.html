@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ronan Cassidy - Design Portfolio</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Rónán Cassidy">
+    <meta name="description" content="Portfolio page for portfolio site for Rónán Cassidy">
+    <meta name="keywords" content="Programming, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../CSS/bulma.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@0;1&family=Righteous&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+        });
+      });
+}
+
+});
+    </script>
+
+  </head>
+
+  <body>
+    
+    <nav id="navbar" class="navbar " role="navigation" aria-label="main navigation">
+    
+      <div class="navbar-brand">
+
+        <!-- Logo in navbar-brand so its present in mobie and desktop-->
+        <a href="../index.html" class="navbar-item ">
+          <img src="../Images/navbarLogo.png" width="75" height="40" alt="Ronan Cassidy">
+        </a>
+
+        <!-- Hamburger Menu Items-->
+            <a role="button" class="navbar-burger " data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+      </div>
+      
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <!-- navbar items -->
+          
+        </div>
+      
+        <div class="navbar-end">
+          <!-- navbar items -->
+
+          <a href="../index.html" class="navbar-item righteous">
+            Home
+          </a>
+
+          <a href="./portfolio.html" class="navbar-item righteous">
+            Code Portfolio
+          </a>
+
+          <a href="./blog.html" class="navbar-item righteous">
+            Blog
+          </a>
+
+          <a href="../Pages/contact.html" class="navbar-item righteous">
+            Contact
+          </a>
+        </div>
+      </div>
+
+
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero bannerImg">
+      <div class="hero-body center">
+        <p class="title righteous has-text-white center title is-3">
+          Design Portfolio
+        </p>
+      </div>
+    </section>
+
+    <div class="columns columnsPadding">
+        <div class="column is-10 is-offset-1 box">
+        <p class="title righteous">An Introduction</p>
+  
+        <p>Art and design has always held a special place in my life from starting off with doodles to making stop motion films when I was young to designing user interfaces, 3D models and digital art. Shown below is some of the work I've done over the past few years for various projects and leisure work in various applications such as Clip Studio Paint, Illustrator, Photoshop, Blender, Maya LT as well as physical artwork. </p>
+      </div>
+    </div>
+  
+    <section class="columns columnsPadding">
+        <section class="column">
+          <section class="center">
+            <h1 class="title righteous">2021</h1>
+          </section>
+        </section>
+      </section>
+
+      <div class="columns columnsPadding">
+          <div class="column is-8 is-offset-2 box">
+              <p class="title righteous"><a href="./Projects/cavalry.html" >Cavalry</a> - Logo Design</p>
+              <p>I designed this logo for a Visual Studio extension I am creating that allows users to "call the cavalry" in to assist while writing code. The design of the icon stemmed from the extension's name, warriors who fought on horseback, from here I decided to replace the traditional choice of weapon with a simple flag pole with the visual studio icon flowing from it. </p>
+            </div>
+        </div>
+
+        <div class="columns columnsPadding">
+      <div class="column is-8 is-offset-2 box">
+            <figure class="image">
+                <img src="../Images/Projects/Cavalry/CavalryIcon.jpg">
+            </figure>
+        </div>
+    </div>
+
+    
+    <br/><br/>
+    
+    <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+            <p class="title righteous"><a href="./Projects/inventoryManager.html" >Inventory Management System</a></p>
+
+            <span class="subtitle righteous">Logo Design</span>
+            <p>I designed this logo for a Visual Studio extension I am creating that allows users to "call the cavalry" in to assist while writing code. The design of the icon stemmed from the extension's name, warriors who fought on horseback, from here I decided to replace the traditional choice of weapon with a simple flag pole with the visual studio icon flowing from it. </p>
+            <br/>
+            <span class="subtitle righteous">Application UI/UX</span>
+            <p>To help modernise the new updated version of my Inventory Management system application, I decided to utilise Material Design elements and iconography to create an intuitive design following modern design conventions. </p>
+          
+          </div>
+      </div>
+
+    <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/InventoryManager/IMSLogo.png">
+              </figure>
+          </div>
+      </div>
+
+      <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/InventoryManager21/ClientList.png">
+              </figure>
+          </div>
+      </div>
+
+      <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/InventoryManager21/ClientView.png">
+              </figure>
+          </div>
+      </div>
+
+      <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/InventoryManager21/ClientEdit.png">
+              </figure>
+          </div>
+      </div>
+
+
+      <br/><br/>
+    
+    <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+            <p class="title righteous"><a href="./Projects/arknight.html">AR Knight: Time Fracture</a></p>
+
+            <span class="subtitle righteous">Logo Design</span>
+            <p>While designing the logo, I took into account that I would want AR to stand out due to the games augmented reality nature, hence I chose two contrasting colours blue and orange. I kept the overall design simplistic as the age rating of the game was aimed at an audience of PEGI 7.</p>
+            <br/>
+            <span class="subtitle righteous">Application UI/UX</span>
+            <p>The user interface/ experience was kept minimal to ensure that the interface was not cluttered due to the minimal screen space as the game is built for mobile Android devices.</p>
+            <br/>
+            <span class="subtitle righteous">Character Design & Models</span>
+            <p>The character models for this game are rather simplistic as I was just beginning to learn how to use Blender and the rigging process for blender models. The character models consist of Slime characters with various hats that I modelled and painted in Blender itself.</p>
+            <br/>
+            <span class="subtitle righteous">Level Models</span>
+            <p>To create the levels for the game, I utilised a software called Asset forge which allowed me to take modular "lego-like" pieces and drag them together and edit it to create the terrains which allows for quick prototyping. </p>
+          
+          </div>
+      </div>
+
+    <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/ARKnight/AR_Knight_A1_Poster.jpg">
+              </figure>
+          </div>
+      </div>
+
+      <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/ARKnight/FieldArena.png">
+              </figure>
+          </div>
+      </div>
+
+      <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/ARKnight/SlimeEgypt.png">
+              </figure>
+          </div>
+      </div>
+  
+<br/><br/>
+
+<section class="columns columnsPadding">
+    <section class="column">
+      <section class="center">
+        <h1 class="title righteous">2020</h1>
+      </section>
+    </section>
+  </section>
+
+  <div class="columns columnsPadding">
+    <div class="column is-8 is-offset-2 box">
+        <p class="title righteous"><a href="./Projects/projectCrescent.html">Project Crescent</a></p>
+        <p>As part of a placement substitute project I carried out for my BSc in Games Development over the summer of 2020, myself and a fellow classmate developed an open-world action/adventure game by the name of Project Crescent. I was in charge of creating the 3km by 3km world map and populate it with various buildings and structures I created using asset forge and Maya LT.</p>
+        <br/>
+        <p>I was also responsible for the design of the UI and other graphical elements throughout the game, most of these were designed using Clip Studio Paint due to limited access to illustrator. The design theme was centered around a high fantasy modernistic setting so I created many smartphone-esque assets for the menu and various HUD elements.</p>
+    </div>
+  </div>
+
+  <div class="columns columnsPadding">
+<div class="column is-8 is-offset-2 box">
+      <figure class="image">
+          <img src="../Images/Projects/ProjectCrescent/CrescentMoonTitleLogo.png">
+      </figure>
+  </div>
+</div>
+
+<div class="columns columnsPadding">
+    <div class="column is-8 is-offset-2 box">
+          <figure class="image">
+              <img src="../Images/Projects/ProjectCrescent/SceneWatermill.png">
+          </figure>
+      </div>
+    </div>
+
+    <div class="columns columnsPadding">
+        <div class="column is-8 is-offset-2 box">
+              <figure class="image">
+                  <img src="../Images/Projects/ProjectCrescent/SceneTemple.png">
+              </figure>
+          </div>
+        </div>
+
+        <div class="columns columnsPadding">
+            <div class="column is-8 is-offset-2 box">
+                  <figure class="image">
+                      <img src="../Images/Projects/ProjectCrescent/GameplaySkillTree.png">
+                  </figure>
+              </div>
+            </div>
+
+            <div class="columns columnsPadding">
+                <div class="column is-8 is-offset-2 box">
+                      <figure class="image">
+                          <img src="../Images/Projects/ProjectCrescent/GameplayShopMenu.png">
+                      </figure>
+                  </div>
+                </div>
+
+
+<br/><br/>
+
+<div class="columns columnsPadding">
+  <div class="column is-8 is-offset-2 box">
+      <p class="title righteous"><a href="./Projects/mechCommanderVR.html">Mech Commander VR</a></p>
+      <p>For my third year project along with two fellow classmates we set out to create a virtual reality based real time strategy game utilising Unity, my responsibilities design wise consisted of terrain creation, character modelling and UI/UX. Due to the high tech nature of a mecha game, I styled the user interface to consist of several holographic like interfaces which the player could turn on and off as needed and carry out various actions through the interface.  </p>
+      <br/>
+      <p>I modelled and rigged the mecha model in Maya LT and then exported the UV maps to Illustrator to create the designs shown below for the game, due to time constrainsts the models were then imported into Mixamo to generate animations based on the model.</p>
+  </div>
+</div>
+
+<div class="columns columnsPadding">
+  <div class="column is-8 is-offset-2 box">
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wB-DRjcYml4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+
+
+<div class="columns columnsPadding">
+  <div class="column is-8 is-offset-2 box">
+    <figure class="image">
+      <img src="../Images/Projects/MechCommanderVR/SceneCommandCenterInner.png">
+    </figure>
+</div>
+</div>
+
+<div class="columns columnsPadding">
+<div class="column is-8 is-offset-2 box">
+  <figure class="image">
+    <img src="../Images/Projects/MechCommanderVR/SceneMechAlt.png">
+  </figure>
+</div>
+</div>
+
+<div class="columns columnsPadding">
+<div class="column is-8 is-offset-2 box">
+  <figure class="image">
+    <img src="../Images/Projects/MechCommanderVR/SceneBirdseye.png">
+  </figure>
+</div>
+</div>
+
+<div class="columns columnsPadding">
+<div class="column is-8 is-offset-2 box">
+  <figure class="image">
+    <img src="../Images/Projects/MechCommanderVR/Mech_Rig.jpg">
+  </figure>
+</div>
+</div>
+
+<br/><br/>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Ronan Cassidy &#169; 2021
+    </p>
+  </div>
+</footer>
+
+  </body>
+
+</html>
+
+
