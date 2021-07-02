@@ -1,267 +1,571 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ronan Cassidy - Home</title>
-
-    <meta charset="UTF-8">
-    <meta name="author" content="Rónán Cassidy">
-    <meta name="description" content="Portfolio site for Rónán Cassidy">
-    <meta name="keywords" content="Programming, Portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="CSS/bulma.css">
-    <link rel="stylesheet" href="CSS/custom.css">
-
+    <!-- Bulma Version 0.9.0-->
     
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@0;1&family=Righteous&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="./CSS/custom.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/showcase.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tourney:ital,wght@1,600&display=swap" rel="stylesheet"> 
 
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/typed.js"></script>
+    
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-
-          // Add a click event on each of them
-          $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
-
-              // Get the target from the "data-target" attribute
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
-
-              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
-
-        });
+      $('document').ready(function(){
+        var typed = new Typed('#typed',{
+        stringsElement: '#typed-strings',
+        backSpeed: 40,
+        typeSpeed: 50,
+        loop:true
       });
-}
-
-});
+      });
     </script>
 
   </head>
 
   <body>
-    
-    <nav id="navbar" class="navbar " role="navigation" aria-label="main navigation">
-    
-      <div class="navbar-brand">
+    <!-- Begin Scroll Up Button -->
 
-        <!-- Logo in navbar-brand so its present in mobie and desktop-->
-        <a class="navbar-item " href="./index.html">
-          <img src="Images/navbarLogo.png" width="75" height="40" alt="Ronan Cassidy">
-        </a>
+    <form action="#home">
+      <button id="toTop" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </form>
+    <!-- End Scroll Up Button -->
 
-        <!-- Hamburger Menu Items-->
-            <a role="button" class="navbar-burger " data-target="navMenu" aria-label="menu" aria-expanded="false">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#home">
+                  HOME
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#about-me">
+                  ABOUT ME
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#resume">
+                  RESUME
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#portfolio">
+                  PORTFOLIO
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#contact">
+                  CONTACT ME
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h2 class="title bebas">Ronan Cassidy</h2>
+            <h1 class="subtitle profession tourney" ><span id="typed"></span></h1>
+            <div id="typed-strings">
+              <p>Software Developer</p>
+              <p>Game Developer</p>
+              <p>UI/UX Enthusiast</p>
+              <p>Complete Nerd</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Content-->
+
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">HOME</a>
+                  </li>
+                  <li>
+                    <a href="#about-me">ABOUT ME</a>
+                  </li>
+                  <li>
+                    <a href="#resume">RESUME</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio">PORTFOLIO</a>
+                  </li>
+                  <li>
+                    <a href="#contact">CONTACT ME</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin About Me Section -->
+      <div class="section-light about-me" id="about-me">
+        <div class="container">
+          <div class="column is-12 about-me">
+            <h1 class="title has-text-centered section-title">About Me</h1>
+          </div>
+          <div class="columns is-multiline">
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+              <p class="is-larger">
+                <strong>
+                  Software and Game Developer based in Ireland with a passion to bring creativity into code and make life simpler through code.
+                </strong>
+              </p>
+              <br/>
+              <p>
+                My name is Ronan Cassidy and I believe that no matter what the project is, that there is creative and innovative solution that will fit it.
+                I'm a recent graduate from the Institute of Technology Sligo with a First Class Honours BSc (Honours) in Software Development and a BSc in Games Development with distinction.
+                Now I am looking for a position that will allow me to expand my skillset and develop software to help consumers.
+              </p>
+              <br/>
+              <div class="is-divider"></div>
+            </div>
+            <div class="column is-6 right-image " data-aos="fade-left">
+              <img
+                class="is-rounded"
+                src="./Images/Profile.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About Me Content -->
+
+      <div class="section-dark resume" id="resume">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">
+                View My Resume
+              </h1>
+            </div>
+            <div class="column is-10 has-text-centered is-offset-1">
+              <h2 class="subtitle">
+                Interested in taking a look at what I have to offer? Why not start by taking a look at my resume?
+              </h2>
+              <form action="./appendices/RCassidyCV.pdf">
+                <button class="button">
+                  Download Resume&emsp;<i class="fad fa-download fa-lg"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin Skills Content -->
+      <div class="section-light skills">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">Skills</h1>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>C#</h1>
+              <progress class="progress is-primary" value="87" max="100"></progress>
+              
+              <h1>Python</h1>
+              <progress class="progress is-warning" value="65" max="100"></progress>
+              
+              <h1>SQL</h1>
+              <progress class="progress is-danger" value="55" max="100"></progress>
+              
+              <h1>Java</h1>
+              <progress class="progress is-link" value="65" max="100"></progress>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>Unity Engine</h1>
+              <progress class="progress is-info" value="65" max="100"></progress>
+              
+              <h1>Microsoft WPF</h1>
+              <progress class="progress is-danger" value="85" max="100"></progress>
+              
+              <h1>Google Firebase</h1>
+              <progress class="progress is-success" value="57" max="100"></progress>
+              
+              <h1>Amazon Web Services</h1>
+              <progress class="progress is-warning" value="65" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Skills Content -->
+
+      <!-- Begin Work Content -->
+      <div class="section-dark my-work" id="portfolio">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12">
+              <h1 class="title has-text-centered section-title">PORTFOLIO</h1>
+            </div>
+
+            <!-- Portfolio Card -->
+            <div class="column is-3">
+              <div class="card">
+              <p class="card-header-title">
+                Project Crescent
+              </p>
+              
+              <a href="#">
+                <figure
+                  class="image is-16by9 work-item"
+                  style="background-image: url(./Images/Projects/Icons/ProjectCrescentIcon.png);"
+                ></figure>
+              </a>
+              <div class="card">
+                <footer class="card-footer">
+                  <p class="card-header-title">
+                    <span class="is-pulled-right">
+                      <a href="https://nanocroft-studios.itch.io/project-crescent">
+                        <span class="tag is-info">v0.3.2</span>
+                      </a>
+                      <span class="tag has-background-primary-light">Windows</span>
+                      <span class="tag has-background-primary-light">Unity</span>
+                      <span class="tag has-background-primary-light">RPG</span>
+                    </span>
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+            <p class="card-header-title">
+              Mech Commander VR
+            </p>
+            
+            <a href="#">
+              <figure
+                class="image is-16by9 work-item"
+                style="background-image: url(./Images/Projects/Icons/MechCommanderVRIcon.png);"
+              ></figure>
             </a>
-      </div>
-      
-      <div class="navbar-menu" id="navMenu">
-        <div class="navbar-start">
-          <!-- navbar items -->
-          
+            <div class="card">
+              <footer class="card-footer">
+                <p class="card-header-title">
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/cassidyRonan/MechCommanderVR">
+                      <span class="tag is-info">v0.2.4</span>
+                    </a>
+                    <span class="tag has-background-primary-light">Windows</span>
+                    <span class="tag has-background-primary-light">SteamVR</span>
+                    <span class="tag is-warning">Alpha</span>
+                  </span>
+                </p>
+              </footer>
+            </div>
+          </div>
         </div>
-      
-        <div class="navbar-end">
-          <!-- navbar items -->
-          
-          <a href="./Pages/portfolio.html" class="navbar-item righteous">
-            Code Portfolio
-          </a>
-          
-          <a href="./Pages/design.html" class="navbar-item righteous">
-            Design Portfolio
-          </a>
 
-          <a href="./Pages/blog.html" class="navbar-item righteous">
-            Blog
+        <div class="column is-3">
+          <div class="card">
+          <p class="card-header-title">
+            Inventory Manager 21
+          </p>
+          
+          <a href="#">
+            <figure
+              class="image is-16by9 work-item"
+              style="background-image: url(./Images/Projects/Icons/IMS21Icon.png);"
+            ></figure>
           </a>
-
-          <a href="./Pages/contact.html" class="navbar-item righteous">
-            Contact
-          </a>
+          <div class="card">
+            <footer class="card-footer">
+              <p class="card-header-title">
+                <span class="is-pulled-right">
+                  <a href="https://github.com/cassidyRonan/InventoryManager">
+                    <span class="tag is-info">v0.0.7</span>
+                  </a>
+                  <span class="tag has-background-primary-light">Desktop</span>
+                  <span class="tag has-background-primary-light">C#</span>
+                  <span class="tag has-background-primary-light">WPF</span>
+                  <span class="tag is-danger">WIP</span>
+                </span>
+              </p>
+            </footer>
+          </div>
         </div>
       </div>
 
-
-    </nav>
-
-    <!-- Hero Banner -->
-    <section class="hero is-medium bannerImg">
-      <div class="hero-body center">
-        <p class="title righteous has-text-white center title is-3">
-          Software & Game Developer
+      <div class="column is-3">
+        <div class="card">
+        <p class="card-header-title">
+          AR Knight
         </p>
-        <p class="subtitle has-text-white center title is-4">
-          Bringing Creativity Into Coding
-        </p>
+        
+        <a href="#">
+          <figure
+            class="image is-16by9 work-item"
+            style="background-image: url(./Images/Projects/Icons/ARKnightIcon.png);"
+          ></figure>
+        </a>
+        <div class="card">
+          <footer class="card-footer">
+            <p class="card-header-title">
+              <span class="is-pulled-right">
+                <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                  <span class="tag is-info">v12</span>
+                </a>
+                <span class="tag has-background-primary-light">Android</span>
+                <span class="tag has-background-primary-light">AR</span>
+                <span class="tag has-background-primary-light">Unity</span>
+                <span class="tag is-warning">Alpha</span>
+              </span>
+            </p>
+          </footer>
+        </div>
       </div>
-    </section>
+    </div>
 
-    
-
-
-    <!-- Bio Header -->
-    <section class="columns columnsPadding">
-      <section class="column">
-        <section class="">
-          <h1 class="title righteous">Hi I'm Ronan Cassidy!</h1>
-        </section>
-      </section>
-    </section>
-
-    <!-- Bio Columns -->
-    <section class="columns columnsPadding">
-      <section class="column">
-
-        <!-- Bio Card -->
-        <article class="box columns">
-          	<article class="column is-three-quarters">
-              <p class="bold subtitle righteous">About Me</p>
-              <p>Hello! My name is Ronan Cassidy and I am fascinated with how code can be used to solve a variety of problems, it's likely due to my love of puzzles. My coding journey began back in 2012 when I began attending a local Coderdojo and was introduced to Scratch, along the way I've learned various languages, agile development and even how to utilise cloud infrastructure.</p>
-              <br/>
-              <p>Along my journey, I have graduated from the Institute of Technology Sligo with a BSc in Games Development at the top of my class, recieveing the Prize Winner Award for the highest GPA in the class and then again with a BSc (Honours) in Software Development a year later. In that time I have also developed an inventory management application for use in the engineering industry by myself as requested by a client. </p>
-              <br/>
-              <p>These days I am currently on the hunt for a software development position which provides an oppurtunity to learn and develop new and old skills alike while solving problems with innovative software solutions. I pride myself on my ability to learn new technologies quickly to utilise them in the project I am working on, I may not know it all but I am prepared to learn it all.</p>
-            </article>
-            
-            <article class="column is-one-quarter">
-              <figure class="image">
-                <img class="is-rounded is-square photoMax" src="./Images/Profile.jpg">
-              </figure>
-            </article>
-          
-        </article>
+    <div class="column is-3">
+      <div class="card">
+      <p class="card-header-title">
+        Inventory Manager 19
+      </p>
       
-      </section>
-    
-    </section>
-
-    <section class="columns columnsPadding">
-      <section class="column">
-        <p class="bold subtitle righteous">Links:</p>
-
-        <!-- Project Card -->
-        <article class="box columns">
-          	<article class="column is-one-quarter">
-              <a href="https://www.linkedin.com/in/ronan-cassidy/" class="button is-info is-rounded is-fullwidth">LINKEDIN</a>
-           </article>
-            
-           <article class="column is-one-quarter">
-            <a href="https://github.com/cassidyRonan" class="button is-success is-rounded is-fullwidth">GITHUB</a>
-         </article>
-
-         <article class="column is-one-quarter">
-          <a href="./appendices/RCassidyCV.pdf" class="button is-danger is-rounded is-fullwidth">VIEW CV</a>
-       </article>
-
-       <article class="column is-one-quarter">
-        <a href="mailto:ronanmcassidy@gmail.com" class="button is-warning is-rounded is-fullwidth">EMAIL ME</a>
-     </article>
-          
-        </article>
-      
-      </section>
-    
-    </section>
-
-
-<!-- Featured Projects Header -->
-<section class="columns columnsPadding">
-  <section class="column">
-    <section class="">
-      <h1 class="title righteous">Featured Projects</h1>
-      <h2 class="subtitle">Here is a look at some of my work!</h2>
-    </section>
-  </section>
-</section>
-  
-<!-- Featured Projects Columns -->
-<section class="columns columnsPadding">
-  <section class="column">
-
-    <!-- Project Card -->
-    <article class="box">
-
-      <p class="bold subtitle center righteous">Inventory Manager</p>
-      <figure class="image is-square">
-        <img src="./Images/Projects/InventoryManager/TileIcon.jpg">
-      </figure>
-      <br/>
-      <p>A Windows Presentation Foundation (WPF) application developed for a client to manage and track both equipment and stock in their business. The application was designed using Material Design guidelines.</p>
-      <br/>
-      <a href="./Pages/Projects/inventoryManager.html" class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
-    </article>
-  
-  </section>
-
-
-  <section class="column">
-    <article class="box">
-
-      <p class="bold subtitle center righteous">AR Knight</p>
-      <figure class="image is-square">
-        <img class="" src="./Images/Projects/ARKnight/ARKnightIcon.jpg">
-      </figure>
-      <br/>
-      <p>An augmented reality game developed as part of my fourth year project in my BSc (Honours) in Software Development. The application is currently in closed beta and will be released on Google Play Q4 2021.</p>
-      <br/>
-      <a href="./Pages/Projects/arknight.html" class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
-    </article>
-  </section>
-  
-
-  <section class="column">
-    <article class="box">
-
-      <p class="bold subtitle center righteous">Mech Commander VR</p>
-      <figure class="image is-square">
-        <img src="./Images/Projects/MechCommanderVR/MechCommanderVRIcon.jpg">
-      </figure>
-      <br/>
-      <p>A virtual reality, real-time strategy game created in the Unity game engine; created as a proof of concept as part of my third year project in my BSc in Computing in Games Development at IT Sligo.</p>
-      <br/>
-      <a href="./Pages/Projects/mechCommanderVR.html" class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
-    </article>
-  </section>
-  
-
-  <section class="column is-one-quarter">
-    <article class="box">
-
-      <p class="bold subtitle center righteous">Project Crescent</p>
-      <figure class="image is-square">
-        <img src="./Images/Projects/ProjectCrescent/ProjectCrescentIcon.jpg">
-      </figure>
-      <br/>
-      <p>An Action/RPG built in the Unity game engine as part of my third year placement project for Windows OS. Travel across the open world to try and find your lost friend while uncovering the secrets of the world.</p>
-      <br/>
-      <a href="./Pages/Projects/projectCrescent.html" class="button is-fullwidth is-info is-rounded">LEARN MORE</a>
-    </article>
-  </section>
-
-</section>
-
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      Ronan Cassidy &#169; 2021
-    </p>
+      <a href="#">
+        <figure
+          class="image is-16by9 work-item"
+          style="background-image: url(./Images/Projects/Icons/IMS19Icon.png);"
+        ></figure>
+      </a>
+      <div class="card">
+        <footer class="card-footer">
+          <p class="card-header-title">
+            <span class="is-pulled-right">
+              <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                <span class="tag is-info">v2.2.16</span>
+              </a>
+              <span class="tag has-background-primary-light">Desktop</span>
+              <span class="tag has-background-primary-light">C#</span>
+              <span class="tag has-background-primary-light">WPF</span>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
   </div>
-</footer>
 
+  <div class="column is-3">
+    <div class="card">
+    <p class="card-header-title">
+      Album Creation Studio
+    </p>
+    
+    <a href="#">
+      <figure
+        class="image is-16by9 work-item"
+        style="background-image: url(./Images/Projects/Icons/ACSIcon.png);"
+      ></figure>
+    </a>
+    <div class="card">
+      <footer class="card-footer">
+        <p class="card-header-title">
+          <span class="is-pulled-right">
+            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+              <span class="tag is-info">v0.5.0</span>
+            </a>
+            <span class="tag has-background-primary-light">AWS</span>
+            <span class="tag has-background-primary-light">API</span>
+            <span class="tag has-background-primary-light">C#</span>
+            <span class="tag is-success">College</span>
+          </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="column is-3">
+  <div class="card">
+  <p class="card-header-title">
+    Project Crescent
+  </p>
+  
+  <a href="#">
+    <figure
+      class="image is-16by9 work-item"
+      style="background-image: url(./Images/Placeholder16x9.png);"
+    ></figure>
+  </a>
+  <div class="card">
+    <footer class="card-footer">
+      <p class="card-header-title">
+        <span class="is-pulled-right">
+          <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+            <span class="tag has-background-primary-light">v0.7.2</span>
+          </a>
+          <span class="tag has-background-primary-light">Desktop</span>
+          <span class="tag is-danger">WIP</span>
+        </span>
+      </p>
+    </footer>
+  </div>
+</div>
+</div>
+
+<div class="column is-3">
+  <div class="card">
+  <p class="card-header-title">
+    Project Crescent
+  </p>
+  
+  <a href="#">
+    <figure
+      class="image is-16by9 work-item"
+      style="background-image: url(./Images/Placeholder16x9.png);"
+    ></figure>
+  </a>
+  <div class="card">
+    <footer class="card-footer">
+      <p class="card-header-title">
+        <span class="is-pulled-right">
+          <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+            <span class="tag has-background-primary-light">v0.7.2</span>
+          </a>
+          <span class="tag has-background-primary-light">Desktop</span>
+          <span class="tag is-danger">WIP</span>
+        </span>
+      </p>
+    </footer>
+  </div>
+</div>
+</div>
+-->
+
+          </div>
+        </div>
+      </div>
+      <!-- End Work Content -->
+
+
+
+
+      <!-- Begin Contact Content -->
+      <div class="section-light contact" id="contact">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in-up"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">
+                Get in touch
+              </h1>
+            </div>
+
+            <div class="column is-8 is-offset-2">
+              <form action="https://www.linkedin.com/in/ronan-cassidy/">
+                <button class="button">
+                  LinkedIn&emsp;<i class="fad fa-download fa-lg"></i>
+                </button>
+              </form>
+
+              <form action="https://github.com/cassidyRonan">
+                <button class="button">
+                  GitHub&emsp;<i class="fad fa-download fa-lg"></i>
+                </button>
+              </form>
+
+              <form action="mailto:ronanmcassidy@gmail.com">
+                <button class="button">
+                  Email&emsp;<i class="fad fa-download fa-lg"></i>
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <p>Ronan Cassidy &copy; 2021
+        <a href="https://bulma.io">
+          <img
+            src="https://bulma.io/images/made-with-bulma.png"
+            alt="Made with Bulma"
+            width="128"
+            height="24">
+        </a>
+      </p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/showcase.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
   </body>
-
 </html>
-
-
