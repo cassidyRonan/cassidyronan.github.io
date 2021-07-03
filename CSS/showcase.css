@@ -38,10 +38,18 @@ html {
   color: whitesmoke;
 }
 
+@media (max-width : 540px) {
+  .hero .profession {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width : 541px){
 .hero .profession {
   padding-top: 5px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
+}
 }
 
 .hero .hero-foot {
