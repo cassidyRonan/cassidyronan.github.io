@@ -220,3 +220,12 @@
 .smallerText{
   font-size: 0.9em;
 }
+
+.projectTitle{
+  font-size: 3em;
+  color: white;
+}
+
+.projectTitle:hover{
+  color: #363636;
+}

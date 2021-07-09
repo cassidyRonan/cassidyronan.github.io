@@ -30,6 +30,20 @@
       });
     </script>
 
+    <script>
+      $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+
+      });
+      });
+    </script>
+
   </head>
 
   <body>
@@ -45,7 +59,7 @@
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
       <!-- Begin Hero -->
-      <section class="hero is-large">
+      <section class="hero heroMain is-large">
         <!-- Begin Mobile Nav -->
         <nav class="navbar is-transparent is-hidden-desktop">
           <!-- Begin Burger Menu -->
@@ -92,7 +106,7 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h2 class="title bebas">Ronan Cassidy</h2>
+            <h2 class="title bebas">	&nbsp;Ronan Cassidy</h2>
             <h1 class="subtitle profession tourney" ><span id="typed"></span></h1>
             <div id="typed-strings">
               <p>Software Developer</p>
@@ -351,7 +365,7 @@
                 Project Crescent
               </p>
               
-              <a href="#">
+              <a href="./projects/crescent.html">
                 <figure
                   class="image is-16by9 work-item"
                   style="background-image: url(./Images/Projects/Icons/ProjectCrescentIcon.png);"
@@ -380,7 +394,7 @@
               Mech Commander VR
             </p>
             
-            <a href="#">
+            <a href="./projects/commander.html">
               <figure
                 class="image is-16by9 work-item"
                 style="background-image: url(./Images/Projects/Icons/MechCommanderVRIcon.png);"
@@ -409,7 +423,7 @@
             Inventory Manager 21
           </p>
           
-          <a href="#">
+          <a href="./projects/ims21.html">
             <figure
               class="image is-16by9 work-item"
               style="background-image: url(./Images/Projects/Icons/IMS21Icon.png);"
@@ -439,7 +453,7 @@
           AR Knight
         </p>
         
-        <a href="#">
+        <a href="./projects/arknight.html">
           <figure
             class="image is-16by9 work-item"
             style="background-image: url(./Images/Projects/Icons/ARKnightIcon.png);"
@@ -469,7 +483,7 @@
         Inventory Manager 19
       </p>
       
-      <a href="#">
+      <a href="./projects/ims19.html">
         <figure
           class="image is-16by9 work-item"
           style="background-image: url(./Images/Projects/Icons/IMS19Icon.png);"
@@ -498,7 +512,7 @@
       Album Creation Studio
     </p>
     
-    <a href="#">
+    <a href="./projects/acs.html">
       <figure
         class="image is-16by9 work-item"
         style="background-image: url(./Images/Projects/Icons/ACSIcon.png);"
@@ -508,9 +522,7 @@
       <footer class="card-footer">
         <p class="card-header-title">
           <span class="is-pulled-right">
-            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
               <span class="tag is-info">v0.5.0</span>
-            </a>
             <span class="tag has-background-primary-light">AWS</span>
             <span class="tag has-background-primary-light">API</span>
             <span class="tag has-background-primary-light">C#</span>
@@ -522,6 +534,7 @@
   </div>
 </div>
 
+<!-- 
 <div class="column is-3">
   <div class="card">
   <p class="card-header-title">
@@ -576,67 +589,9 @@
       </p>
     </footer>
   </div>
-</div>
-</div>
-
-<!--
-<div class="column is-3">
-  <div class="card">
-  <p class="card-header-title">
-    Project Crescent
-  </p>
-  
-  <a href="#">
-    <figure
-      class="image is-16by9 work-item"
-      style="background-image: url(./Images/Placeholder16x9.png);"
-    ></figure>
-  </a>
-  <div class="card">
-    <footer class="card-footer">
-      <p class="card-header-title">
-        <span class="is-pulled-right">
-          <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-            <span class="tag has-background-primary-light">v0.7.2</span>
-          </a>
-          <span class="tag has-background-primary-light">Desktop</span>
-          <span class="tag is-danger">WIP</span>
-        </span>
-      </p>
-    </footer>
-  </div>
-</div>
-</div>
-
-<div class="column is-3">
-  <div class="card">
-  <p class="card-header-title">
-    Project Crescent
-  </p>
-  
-  <a href="#">
-    <figure
-      class="image is-16by9 work-item"
-      style="background-image: url(./Images/Placeholder16x9.png);"
-    ></figure>
-  </a>
-  <div class="card">
-    <footer class="card-footer">
-      <p class="card-header-title">
-        <span class="is-pulled-right">
-          <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-            <span class="tag has-background-primary-light">v0.7.2</span>
-          </a>
-          <span class="tag has-background-primary-light">Desktop</span>
-          <span class="tag is-danger">WIP</span>
-        </span>
-      </p>
-    </footer>
-  </div>
-</div>
+</div> 
 </div>
 -->
-
           </div>
         </div>
       </div>

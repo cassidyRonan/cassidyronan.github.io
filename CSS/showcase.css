@@ -19,7 +19,7 @@ html {
   padding-bottom: 30px;
 }
 
-.hero {
+.heroMain {
   background-image: url("../Images/heroBanner.png");
   background: linear-gradient(rgba(199, 143, 21, 0.45), rgba(15, 200, 224, 0.45)), rgba(0, 0, 0, 0.55) url("../Images/heroBanner.png") no-repeat;
   background-attachment: fixed;

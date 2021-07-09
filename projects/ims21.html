@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Ronan Cassidy - Project Crescent</title>
+    <!-- Bulma Version 0.9.0-->
+    
+    <link rel="stylesheet" type="text/css" href="../CSS/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/showcase.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/bulma-timeline.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tourney:ital,wght@1,600&display=swap" rel="stylesheet"> 
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    
+
+    <script>
+      $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+
+      });
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- Begin Header -->
+    <section class="hero is-dark is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item projectTitle bebas" href="../index.html">
+                  Ronan Cassidy
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item" href="../index.html">
+                    Home
+                  </a>
+                  <a class="navbar-item" href="../index.html#portfolio">
+                    Portfolio
+                  </a>
+                  <a class="navbar-item" href="../index.html#contact">
+                    Contact Me
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <img src="../Images/Projects/InventoryManager21/IMS21Header.png">
+            <p class="subtitle profession tourney">
+              Managing Your Workplace Since '21
+            </p>
+            <form action="https://github.com/cassidyRonan/InventoryManager">
+              <button class="button is-info">
+                VIEW ON GITHUB
+              </button>
+            </form>
+          </div>
+          
+        </div>
+      
+      </section>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin About Me Section -->
+      <div class="section-light resume" id="resume">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">
+                About Inventory Management System 21
+              </h1>
+            </div>
+            <div class="column is-10 has-text-centered is-offset-1">
+              <h2 class="subtitle">
+                Inventory Management System 21 is a stock and equipment mananagement system built using .NET Core 3.1 and a SQLite Database with support for multiple simultaneous users, barcode scanning and boasts several improvements over the original 2019 edition.
+              </h2>
+            </div>
+
+            <div class="column is-2 has-text-centered is-offset-5">
+              <form action="https://github.com/cassidyRonan/InventoryManager">
+                <button class="button is-info">
+                  View On GitHub
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About Me Content -->
+
+      <div class="section-dark about-me" >
+                <div class="container">
+                  <div class="columns is-multiline">
+                    <div class="column is-12 about-me">
+                      <h1 class="title has-text-centered section-title">Technology Stack</h1>
+                    </div>
+                    
+                    <div class="column is-10 has-text-centered is-offset-1">
+                        <ul class="subtitle">
+                            <li>C#</li>
+                            <li>SQLite</li>
+                            <li>Material Design for XAML</li>
+                            <li>Windows Presentation Foundation (WPF)</li>
+                            <br/>
+                            <li>Clip Studio Paint</li>
+                            <br/>
+                            <li>Trello</li>
+                        </ul>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="section-light about-me" id="about-me">
+                <div class="container">
+                  <div
+                    class="columns is-multiline"
+                    data-aos="fade-in"
+                    data-aos-easing="linear"
+                  >
+                    <div class="column is-12 about-me">
+                      <h1 class="title has-text-centered section-title">
+                        Features
+                      </h1>
+                    </div>
+
+                    <div class="column is-10 has-text-centered is-offset-1">
+                      <h2 class="subtitle">
+                        Detailed below are a selection of the key features which I am currently developing for the IMS 2021 Edition.
+                      </h2>
+                    </div>
+        
+                    <!-- Radial Selection Menu Feature Detail Block -->
+                    <div class="columns is-multiline">
+                      <div
+                        class="column is-6 has-vertically-aligned-content"
+                        data-aos="fade-right"
+                      >
+                        <p class="is-larger">
+                          <strong>
+                            Material Redesign
+                          </strong>
+                        </p>
+                        <br/>
+                        <p>The original version of the software in 2019 had a clunky early 2000's style aesthetic to it that resulted in the interface feeling clunky and unwieldly.</p>
+                        <p>&nbsp;</p>
+                        <p>The software now has an updated interface following material design guidelines to result in a smoother and cleaner experience for the end user. This was accomplished with the help of the Material Design for XAML library.</p>
+                        <br/>
+                        <div class="is-divider"></div>
+                      </div>
+
+                      <div class="column is-6 right-image " data-aos="fade-left">
+                        <img
+                          class="is-rounded"
+                          src="../Images/Projects/InventoryManager21/ClientView.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Modular Weapon Creation Feature Detail Block -->
+                    <div class="columns is-multiline">
+                      <div
+                        class="column is-6 has-vertically-aligned-content"
+                        data-aos="fade-right"
+                      >
+                        <p class="is-larger">
+                          <strong>
+                            SQLite Upgrade
+                          </strong>
+                        </p>
+                        <br/>
+                        <p>The previous installment of the IMS software stored data via a JSON file and was only able to be accessed by a single user at once, leading to the possibility of item conflicts.</p>
+                        <p>&nbsp;</p>
+                        <p>Now IMS 2021 has been rebuilt from the ground up utilising SQLite for the storage of data, allowing not only for portability to a new system but also the ability for multiple concurrent users to access the system.</p>
+                        <br/>
+                        <div class="is-divider"></div>
+                      </div>
+
+                      <div class="column is-6 right-image " data-aos="fade-left">
+                        <img
+                          class="is-rounded"
+                          src="../Images/Projects/InventoryManager21/ClientList.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+
+<!-- Begin Gallery Content -->
+    <div class="section-dark my-work" id="portfolio">
+      <div class="container">
+        <div
+          class="columns is-multiline"
+          data-aos="fade-in"
+          data-aos-easing="linear"
+        >
+          <div class="column is-12">
+            <h1 class="title has-text-centered section-title">Gallery</h1>
+          </div>
+
+          <!-- Image Card -->
+          <div class="column is-4">
+            <div class="card">
+            <a href="../Images/Projects/InventoryManager21/ClientEdit.png">
+              <figure
+                class="image is-16by9 work-item"
+                style="background-image: url(../Images/Projects/InventoryManager21/ClientEdit.png); background-size: fill;"
+              ></figure>
+            </a>
+          </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card">
+            <a href="../Images/Projects/InventoryManager21/ClientList.png">
+              <figure
+                class="image is-16by9 work-item"
+                style="background-image: url(../Images/Projects/InventoryManager21/ClientList.png); background-size: fill;"
+              ></figure>
+            </a>
+          </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card">
+            <a href="../Images/Projects/InventoryManager21/ClientView.png">
+              <figure
+                class="image is-16by9 work-item"
+                style="background-image: url(../Images/Projects/InventoryManager21/ClientView.png); background-size: fill;"
+              ></figure>
+            </a>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+<!-- End Gallery Content -->
+
+
+      
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <p>Ronan Cassidy &copy; 2021
+        <a href="https://bulma.io">
+          <img
+            src="https://bulma.io/images/made-with-bulma.png"
+            alt="Made with Bulma"
+            width="128"
+            height="24">
+        </a>
+      </p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/showcase.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Ronan Cassidy - Album Creation Service</title>
+    <!-- Bulma Version 0.9.0-->
+    
+    <link rel="stylesheet" type="text/css" href="../CSS/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/showcase.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/bulma-timeline.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tourney:ital,wght@1,600&display=swap" rel="stylesheet"> 
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    
+
+    <script>
+      $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+
+      });
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- Begin Header -->
+    <section class="hero is-link is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item projectTitle bebas" href="../index.html">
+                  Ronan Cassidy
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item" href="../index.html">
+                    Home
+                  </a>
+                  <a class="navbar-item" href="../index.html#portfolio">
+                    Portfolio
+                  </a>
+                  <a class="navbar-item" href="../index.html#contact">
+                    Contact Me
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <img src="../Images/Projects/AlbumCreationStudio/ACSLogo.png">
+            <p class="subtitle profession tourney">
+              Bringing Scrapbooking to 2021
+            </p>
+          </div>
+          
+        </div>
+      
+      </section>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin About Me Section -->
+      <div class="section-light resume" id="resume">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">
+                About Album Creation Studio
+              </h1>
+            </div>
+
+            <div class="column is-10 has-text-centered is-offset-1">
+              <h2 class="subtitle">
+                Album Creation Studio was developed as part of a college project to utilise some of the many features of Amazon Web Services and develop an API based serverless application. The inspiration for the project came about as a friend of mine had been taking a large amount of polaroids but due to the fact they were polaroids made it difficult for everyone to get a copy of the photo. This led to the idea of creating a digital photo album with some personality that you can send to your friends and family as a PDF.
+              </h2>
+            </div>
+
+            <div class="column is-2 has-text-centered is-offset-5">
+              <form action="https://github.com/cassidyRonan">
+                <button class="button is-info" disabled>
+                  View On GitHub
+                </button>
+              </form>
+            </div>
+<br/>
+<!--
+            <div class="column is-8 is-offset-2 box">
+                <div class="video-container">
+                  <iframe src="https://www.youtube-nocookie.com/embed/wB-DRjcYml4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+                </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- End About Me Content -->
+
+      <div class="section-dark about-me" >
+                <div class="container">
+                  <div class="columns is-multiline">
+                    <div class="column is-12 about-me">
+                      <h1 class="title has-text-centered section-title">Technology Stack</h1>
+                    </div>
+                    
+                    <div class="column is-10 has-text-centered is-offset-1">
+                        <ul class="subtitle">
+                            <li>C#</li>
+                            <li>.NET Core 3.1</li>
+                            <li>PDFSharp Core</li>
+                            <li>GDI+ Library</li>
+                            <br/>
+                            <li>AWS Lambda</li>
+                            <li>AWS API Gateway (REST)</li>
+                            <li>AWS DynamoDB</li>
+                            <li>AWS DAX</li>
+                            <li>AWS Code Commit</li>
+                            <li>AWS Simple Queue Service</li>
+                            <li>AWS Simple Email Service</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p><strong>Architecture Diagram</strong></p>
+                      </div>
+                      <div class="column is-10 is-offset-1 image" data-aos="fade-left">
+                        <img
+                          src="../Images/Projects/AlbumCreationStudio/Architecture.png"
+                          alt=""
+                        />
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="section-light about-me" id="about-me">
+                <div class="container">
+                  <div
+                    class="columns is-multiline"
+                    data-aos="fade-in"
+                    data-aos-easing="linear"
+                  >
+                    <div class="column is-12 about-me">
+                      <h1 class="title has-text-centered section-title">
+                        Services Utilised
+                      </h1>
+                    </div>
+
+                    <div class="column is-10 has-text-centered is-offset-1">
+                      <h2 class="subtitle">
+                        Detailed below are a selection of the key features which I developed for Album Creation Studio, these detail the usage of some of the AWS services used in the project as well as a breakdown of the applications functionality.
+                      </h2>
+                    </div>
+        
+                    <!-- Radial Selection Menu Feature Detail Block -->
+                    <div class="columns is-multiline">
+                      <div
+                        class="column is-6 has-vertically-aligned-content"
+                        data-aos="fade-right"
+                      >
+                        <p class="is-larger">
+                          <strong>
+                            AWS API Gateway
+                          </strong>
+                        </p>
+                        <br/>
+                        <p>The application uses AWS API Gateway to create a REST API Endpoint to allow for the client application to send a PUT Request to the service with the user's chosen image files and their email for the album to be sent to after its creation.</p>
+                        <p>&nbsp;</p>
+                        <p>The purpose of using a REST API means that it is easy to build multiple client interfaces which can send requests to the service and generate an album, these client facing interfaces could be made as a Web Application, Desktop or even a mobile interface.</p>
+                        <p>&nbsp;</p>
+                        <p>To further improve the experience for users, the API endpoint was linked up to a Lambda @ Edge function meaning that it will fire up a lambda instance close to the user's location to cut down on latency between the user and serverless applications.</p>
+                        <br/>
+                        <div class="is-divider"></div>
+                      </div>
+
+                      <div class="column is-6 right-image " data-aos="fade-left">
+                        <img
+                          class="is-rounded"
+                          src="../Images/Projects/AlbumCreationStudio/APIGatewaySq.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Modular Weapon Creation Feature Detail Block -->
+                    <div class="columns is-multiline">
+                      <div
+                        class="column is-6 has-vertically-aligned-content"
+                        data-aos="fade-right"
+                      >
+                        <p class="is-larger">
+                          <strong>
+                            AWS Lambda Applications
+                          </strong>
+                        </p>
+                        <br/>
+                        <p>As shown in the architecture diagram up above, the Album Creation Studio utilises several AWS Lambda Functions to break up the functionality of the program to help reduce costs and improve the speed of album creation. The Lambda applications utilise .NET Core 3.1 for the underlaying code along with the PDFSharp Core and GDI+ Libraries.</p>
+                        <p>&nbsp;</p>
+                        <p>These functions are configured as Edge functions as aforementioned in the API section, the functions handle the queuing of the album images, applying a border to each images and then compiling all the photos into a album in the PDF Format. As the focus of the project was to utilise AWS Services, the image processing capabilities of the application have been kept simplistic.</p>
+                        <br/>
+                        <div class="is-divider"></div>
+                      </div>
+
+                      <div class="column is-6 right-image " data-aos="fade-left">
+                        <img
+                          class="is-rounded"
+                          src="../Images/Projects/AlbumCreationStudio/LambdaCreate.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Fast Travel Feature Detail Block -->
+                    <div class="columns is-multiline">
+                      <div
+                        class="column is-6 has-vertically-aligned-content"
+                        data-aos="fade-right"
+                      >
+                        <p class="is-larger">
+                          <strong>
+                            AWS Simple Email Service
+                          </strong>
+                        </p>
+                        <br/>
+                        <p>Once the service has applied the image processing and compiled the images into a PDF document, it then takes the email intially passed to the API from the DYnamoDB database and sends an email containg the album to the end user.</p>
+                        <p>&nbsp;</p>
+                        <p>After the email has been sent, all user information is removed from the DynamoDB system to ensure a greatly reduced chance of data breaches.</p>
+                        <br/>
+                        <div class="is-divider"></div>
+                      </div>
+
+                      <div class="column is-6 right-image " data-aos="fade-left">
+                        <img
+                          class="is-rounded "
+                          src="../Images/Projects/AlbumCreationStudio/SES.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+<!-- Begin Gallery Content -->
+    <div class="section-dark my-work" id="portfolio">
+      <div class="container">
+        <div
+          class="columns is-multiline"
+          data-aos="fade-in"
+          data-aos-easing="linear"
+        >
+          <div class="column is-12">
+            <h1 class="title has-text-centered section-title">Alpha Demo</h1>
+          </div>
+
+          <div class="column is-8 is-offset-2 box">
+            <div class="video-container">
+              <iframe  src="https://www.youtube.com/embed/QrQFBKv4ISE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+<!-- End Gallery Content -->
+
+
+      
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <p>Ronan Cassidy &copy; 2021
+        <a href="https://bulma.io">
+          <img
+            src="https://bulma.io/images/made-with-bulma.png"
+            alt="Made with Bulma"
+            width="128"
+            height="24">
+        </a>
+      </p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/showcase.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
