@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+
+.roleTitleBlue{
+    font-family: 'Bebas Neue',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    height: 108px;
+    font-size: 128px;
+    line-height: 75%;
+
+    /* or 96px */
+    display: flex;
+    align-items: center;
+
+    color: #00B0FF;
+
+
+}
+
+.roleTitleOrange{
+    font-family: 'Bebas Neue',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    height: 108px;
+    font-size: 128px;
+    line-height: 75%;
+
+    /* or 96px */
+    display: flex;
+    align-items: center;
+
+    color: #F57C00;
+
+    padding-left: 35px;
+}
+
+.roleTitleContainer{
+    margin: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .roleTitleBlue{
+        font-size: 64px;
+        margin-top: 40px;
+        height: 50px;
+    }
+    
+    .roleTitleOrange{
+        font-size: 64px;
+        margin-bottom: 40px;
+        height: 50px;
+    }
+  }
+
+  
