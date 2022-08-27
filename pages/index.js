@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <div className='flexBoxer'>
-          <button className={'buttonMail'} onClick={() => {window.open("mailto:ronancassidy.work@gmail.com")}}>Contact Me</button>
+          <a className={'buttonMail'} href="mailto:ronancassidy.work@gmail.com" >Contact Me</a>
         </div>
       
       </main>
