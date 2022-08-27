@@ -8,7 +8,7 @@ export default class RoleTitle extends Component {
     componentDidMount(){
 
         this.typed = new Typed(this.el,{
-            strings: ['Azure','Systems','Full Stack','Cloud'],
+            strings: ['','Azure','Systems','Full Stack','Cloud'],
             backSpeed: 40,
             typeSpeed: 50,
             loop:true
