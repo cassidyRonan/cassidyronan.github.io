@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300&family=Dosis&display=swap');
 
 html,
 body {
@@ -93,6 +93,7 @@ a {
 .cardTextHighlight{
   color:#512BD4;
 }
+
 
 
 @media only screen and (max-width: 583px) {
