@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+
 html,
 body {
   padding: 0;
@@ -32,6 +34,7 @@ a {
   width: 100%;
 
   margin-top: -10px;
+  margin-bottom: 200px;
   background-color: #FFFFFF;
 }
 
@@ -55,25 +58,51 @@ a {
   justify-content: center;
 }
 
-.buttonMail{
-  width: 143px;
-  height: 56px;
+.sectionCenter{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: center;
 
-  background: #00B0FF;
-  border-radius: 36px;
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
 
-  font-family: 'Bebas Neue',sans-serif;
+.cardFlexBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  row-gap: 30px;
+}
+
+.cardText{ 
+  font-family: 'Dosis';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 75%;
+  font-size: 24px;
 
-  /* identical to box height, or 15px */
-  border: transparent;
+  margin-bottom: 5px;
 
-  color: #FFFFFF;
+  color: #000000;
+}
 
-  margin-top: 80px;
-  text-align: center;
-  padding-top: 20px;
+.cardTextHighlight{
+  color:#512BD4;
+}
+
+
+@media only screen and (max-width: 583px) {
+  .pageDividerBackground{
+    margin-bottom: 300px;
+  }
+}
+
+@media only screen and (min-width: 584px) and (max-width: 970px) {
+  .pageDividerBackground{
+    margin-bottom: 370px;
+  }
 }

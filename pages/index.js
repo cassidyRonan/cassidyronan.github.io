@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Header from './components/Header';
+import SectionHeader from './components/Headers/SectionHeader';
+import SectionSubheader from './components/Headers/SectionSubheader';
+import Navbar from './components/Navbar';
 import ProfilePortrait from './components/ProfilePortrait';
 import RoleTitle from './components/RoleTitle';
+import RoundedCard from './components/RoundedCard';
 
 
 export default function Home() {
@@ -15,7 +18,7 @@ export default function Home() {
       </Head>
 
       <header>
-        <Header/>
+        <Navbar/>
       </header>
 
       <main>
@@ -31,9 +34,50 @@ export default function Home() {
           <img className={'pageDivider'} src={'/pageDivider.svg'} />
         </div>
 
-        <div className='flexBoxer'>
-          <a className={'buttonMail'} href="mailto:ronancassidy.work@gmail.com" >Contact Me</a>
+        <div className={'sectionCenter'} >
+          <SectionHeader heading={'ABOUT ME'} />
+          
+          <div className={'cardFlexBox'}>
+            <RoundedCard isBlue={true} title='BIO'>
+              <div className='cardText'>Hello there, I'm Ronan and I'm an Azure Developer based in Ireland. </div>
+              <div className='cardText'>Currently researching and developing Proof of Concepts at <span className='cardTextHighlight'>Tata Consultancy Services</span> to bring new ideas and concepts to solve client problems.</div>
+              <div className='cardText'>Always exploring new technologies and expanding my skillset to bring tomorrow's ideas to life.</div>
+            </RoundedCard>
+            
+            <RoundedCard isBlue={false} title='MEMBERSHIPS'>
+              <ul className='cardText'>
+                <li>Irish Computer Society</li>
+                <li>Coderdojo Athlone</li>
+              </ul>
+              <ul className='cardText'>
+                <li>Class Representative</li>
+                <li>Tea Society Secretary</li>
+                <li>Games Society Treasurer</li>
+                <li>Computing Society</li>
+                <li>LGBT+ Society</li>
+                <li>Games Society</li>
+                <li>Tea Society</li>
+                <li>Chess Club</li>
+                <li>Irish Language Society</li>
+              </ul>
+            </RoundedCard>
+            
+            <RoundedCard isBlue={true} title='HOBBIES/INTERESTS'>
+              <ul className='cardText'>
+                <li>Internet Of Things</li>
+                <li>Digital Twins</li>
+                <li>Computer Vision</li>
+                <li>Robotics</li>
+                <li>Machine Learning</li>
+                <li>Game Development</li>
+                <li>Virtual Reality</li>
+                <li>Augmented Reality</li>
+              </ul>
+            </RoundedCard>
+          </div>
+
         </div>
+
       
       </main>
 
