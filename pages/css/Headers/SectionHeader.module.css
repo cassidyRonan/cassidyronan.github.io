@@ -1,0 +1,11 @@
+.sectionHeader{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75%;
+    color: #FFFFFF;
+
+    text-align: center;
+    margin-bottom: 25px;
+}

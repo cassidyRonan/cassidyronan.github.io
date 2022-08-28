@@ -1,0 +1,13 @@
+.sectionSubheader{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;    
+    color: #FFFFFF;
+
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
