@@ -1,0 +1,94 @@
+.certificationCard{
+    position: relative;
+    box-sizing: border-box;
+    width: 379px;
+    height: 447px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 0px;
+
+    z-index: 103;
+
+    padding: 15px;
+
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.certificationCardBack{
+    position: absolute;
+    box-sizing: border-box;
+    width: 379px;
+    height: 447px;
+
+    left: 11px;
+    top: 11px;
+    
+    background: #D69E34;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 0px;
+
+    z-index: 100;
+}
+.certificationCardContainer{
+    position: relative;
+    margin: 10px;
+}
+
+.certificationCardTitle{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 10px;
+
+}
+
+.certificationCardProvider{
+    max-width: 150px;
+    max-height: 40px;
+    margin-bottom: 30px;
+}
+
+.certificationCardImage{
+    max-width: 270px;
+    max-height: 270px;
+    width: 100%;
+    height: 100%;
+}
+
+.certificationCardLabel
+{
+    position: absolute;
+    bottom: 10px;
+    left: 34px;
+    font-family: 'Darker Grotesque',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    width: 312px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+@media only screen and (max-width: 583px) {
+    .certificationCard,
+    .certificationCardBack{
+        width: 312px;
+    }
+
+    .certificationCardLabel
+    {
+        left: 0px;
+    }
+
+  }
