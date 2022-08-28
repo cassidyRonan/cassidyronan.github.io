@@ -1,11 +1,12 @@
-.headerBackdrop{
+.navBackdrop{
     height: 100px;
     width: 100%;
     background-color: #FFFFFF;
     position: fixed;
+    z-index: 2000;
 }
 
-.headerLogo{
+.navLogo{
     width: 132px;
     height: 72px;
 
