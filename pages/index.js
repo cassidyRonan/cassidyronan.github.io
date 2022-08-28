@@ -39,9 +39,9 @@ export default function Home() {
           
           <div className={'cardFlexBox'}>
             <RoundedCard isBlue={true} title='BIO'>
-              <div className='cardText'>Hello there, I'm Ronan and I'm an Azure Developer based in Ireland. </div>
+              <div className='cardText'>Hello there, I am Ronan and I am an Azure Developer based in Ireland. </div>
               <div className='cardText'>Currently researching and developing Proof of Concepts at <span className='cardTextHighlight'>Tata Consultancy Services</span> to bring new ideas and concepts to solve client problems.</div>
-              <div className='cardText'>Always exploring new technologies and expanding my skillset to bring tomorrow's ideas to life.</div>
+              <div className='cardText'>Always exploring new technologies and expanding my skillset to bring tomorrows ideas to life.</div>
             </RoundedCard>
             
             <RoundedCard isBlue={false} title='MEMBERSHIPS'>
