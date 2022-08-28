@@ -21,6 +21,7 @@ export default class Navbar extends Component {
     return (
       <div className={styles.navBackdrop}>
         <img className={styles.navLogo} src={'/logo.svg'} />
+        <img className={styles.navLogoMobile} src={'/mobileLogo.svg'} />
       </div>
     )
   }
