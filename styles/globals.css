@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300&family=Dosis&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300;500&family=Dosis&family=Roboto:wght@100&display=swap');
 html,
 body {
   padding: 0;
@@ -77,6 +76,7 @@ a {
   align-content: center;
   justify-content: space-evenly;
   row-gap: 30px;
+  margin-bottom: 20px;
 }
 
 .cardText{ 
