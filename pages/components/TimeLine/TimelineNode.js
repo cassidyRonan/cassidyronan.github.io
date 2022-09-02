@@ -20,8 +20,8 @@ export default class TimelineNode extends Component {
 
     render() {
         return (
-            <div class={styles.container + " " + (this.props.isLeft ? styles.left : styles.right)}>
-                <div class={styles.content}>
+            <div className={styles.container + " " + (this.props.isLeft ? styles.left : styles.right)}>
+                <div className={styles.content}>
                     <div className={styles.timelineNodeHeader} >
                         <img className={styles.timelineNodeImg} src={this.props.logo}/>
                         <div className={styles.timelineNodeDate} >{this.props.date}</div>
