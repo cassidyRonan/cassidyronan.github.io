@@ -23,6 +23,8 @@ export default class Timeline extends Component {
         super(props);
 
         this.isLeft = true;
+
+        this.nodeList = this.props.nodes.map((experienceNode) => this.createNode(this.isLeft,experienceNode.heading,experienceNode.body,experienceNode.date,experienceNode.logo));
     }
 
     createNode(isLeft,heading,body,date,logo){
@@ -34,7 +36,7 @@ export default class Timeline extends Component {
         return (
             <div className={styles.timeline}>
                 {
-                    this.props.nodes.map((experienceNode) => this.createNode(this.isLeft,experienceNode.heading,experienceNode.body,experienceNode.date,experienceNode.logo))
+                    this.nodeList
                 }
             </div>
         );
