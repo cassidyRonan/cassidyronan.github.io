@@ -31,27 +31,35 @@ export default class Timeline extends Component {
         return(<TimelineNode date={date} heading={heading} body={body} isLeft={isLeft} logo={logo} />);
     }
 
+    createTimeLineList(){
+        return(
+            <>
+            {
+                this.createNode(this.isLeft,this.props.nodes[0].heading,this.props.nodes[0].body,this.props.nodes[0].date,this.props.nodes[0].logo)
+            }
+            {
+                this.createNode(this.isLeft,this.props.nodes[1].heading,this.props.nodes[1].body,this.props.nodes[1].date,this.props.nodes[1].logo)
+            }
+            {
+                this.createNode(this.isLeft,this.props.nodes[2].heading,this.props.nodes[2].body,this.props.nodes[2].date,this.props.nodes[2].logo)
+            }
+            {
+                this.createNode(this.isLeft,this.props.nodes[3].heading,this.props.nodes[3].body,this.props.nodes[3].date,this.props.nodes[3].logo)
+            }
+            {
+                this.createNode(this.isLeft,this.props.nodes[4].heading,this.props.nodes[4].body,this.props.nodes[4].date,this.props.nodes[4].logo)
+            }
+            {
+                this.createNode(this.isLeft,this.props.nodes[5].heading,this.props.nodes[5].body,this.props.nodes[5].date,this.props.nodes[5].logo)
+            }
+            </>
+        );
+    }
+
     render() {
         return (
             <div className={styles.timeline}>
-                {
-                    this.createNode(this.isLeft,this.props.nodes[0].heading,this.props.nodes[0].body,this.props.nodes[0].date,this.props.nodes[0].logo)
-                }
-                {
-                    this.createNode(this.isLeft,this.props.nodes[1].heading,this.props.nodes[1].body,this.props.nodes[1].date,this.props.nodes[1].logo)
-                }
-                {
-                    this.createNode(this.isLeft,this.props.nodes[2].heading,this.props.nodes[2].body,this.props.nodes[2].date,this.props.nodes[2].logo)
-                }
-                {
-                    this.createNode(this.isLeft,this.props.nodes[3].heading,this.props.nodes[3].body,this.props.nodes[3].date,this.props.nodes[3].logo)
-                }
-                {
-                    this.createNode(this.isLeft,this.props.nodes[4].heading,this.props.nodes[4].body,this.props.nodes[4].date,this.props.nodes[4].logo)
-                }
-                {
-                    this.createNode(this.isLeft,this.props.nodes[5].heading,this.props.nodes[5].body,this.props.nodes[5].date,this.props.nodes[5].logo)
-                }
+                {this.createTimeLineList()}
             </div>
         );
     }
