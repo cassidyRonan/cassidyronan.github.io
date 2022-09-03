@@ -45,6 +45,8 @@ export default class Timeline extends Component {
             </div>)},
         {date:'2017',heading:'Lab Technician',logo:'/experienceLogos/ans.jpg',body:(<div>Responsible for a variety of tasks including inspection preperation, certification distribution, inventory management and various other day to day tasks. <br/>Provided a base knowledge of the Non Destructive Testing (NDT) domain.</div>)},
       ];
+
+      this.createNode = this.createNode.bind(this);
     }
 
     createNode(isLeft,heading,body,date,logo){
@@ -56,7 +58,7 @@ export default class Timeline extends Component {
         return(
             <>
             {
-                this.createNode(this.isLeft,this.nodeList[0].heading,this.nodeList[0].body,this.nodeList[0].date,this.nodeList[0].logo)
+                this.nodeList.map((node) => this.createNode(this.isLeft,node.heading,node.body,node.date,node.logo))
             }
             </>
         );
