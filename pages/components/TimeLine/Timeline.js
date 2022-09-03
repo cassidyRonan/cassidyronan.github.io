@@ -50,7 +50,7 @@ export default class Timeline extends Component {
 
     createNode(isLeft,heading,body,date,logo){
         this.isLeft = !isLeft;
-        return(<TimelineNode date={date} heading={heading} body={body} isLeft={isLeft} logo={logo} />);
+        return(<TimelineNode date={date} heading={heading} body={body} isLeft={isLeft} logo={logo} key={heading} />);
     }
 
     createTimeLineList(){
