@@ -38,10 +38,10 @@
 }
 
 .certificationCardTitle{
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Barlow',sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 100%;
     display: flex;
     align-items: center;
@@ -68,10 +68,10 @@
     position: absolute;
     bottom: 10px;
     left: 34px;
-    font-family: 'Darker Grotesque',sans-serif;
+    font-family: 'Barlow',sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 300;
+    font-size: 28px;
     line-height: 100%;
     width: 312px;
     text-align: center;

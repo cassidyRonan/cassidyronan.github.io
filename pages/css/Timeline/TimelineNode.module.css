@@ -102,7 +102,7 @@
   }
 
   .timelineNodeDate{
-    font-family: 'Darker Grotesque',sans-serif;
+    font-family: 'Barlow',sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 28px;
@@ -110,18 +110,17 @@
   }
 
   .timelineNodeHeading{
-    font-family: 'Darker Grotesque',sans-serif;
+    font-family: 'Barlow',sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 28px;
     line-height: 100%;
     margin-bottom: 5px;
   }
 
   .timelineNodeBody{
-    font-family: 'Roboto',sans-serif;
-    font-style: thin;
-    font-weight: 100;
+    font-family: 'Barlow',sans-serif;
+    font-weight: 300;
     font-size: 22px;
     line-height: 100%;
   }
