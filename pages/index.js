@@ -5,6 +5,7 @@ import Divider from './components/Divider';
 import SectionHeader from './components/Headers/SectionHeader';
 import SectionSubheader from './components/Headers/SectionSubheader';
 import Navbar from './components/Navbar';
+import PortfolioCard from './components/PortfolioCard';
 import ProfilePortrait from './components/ProfilePortrait';
 import RoleTitle from './components/RoleTitle';
 import RoundedCard from './components/RoundedCard';
@@ -98,6 +99,25 @@ export default function Home() {
 
         <Divider/>
 
+        <div className={'sectionCenter '} >
+          <SectionHeader heading={'PORTFOLIO'} />
+
+          <div className={'cardFlexCenterBox'}>
+            <PortfolioCard company={'Personal'} isCompanyText={true} title={'Portfolio Website'} techStack={['/techStack/css3.png','/techStack/html5.png','/techStack/react.svg','/techStack/nextjs.svg']} repoLink={'https://github.com/cassidyRonan/cassidyronan.github.io'} />  
+            <PortfolioCard company={'NDA'} isCompanyText={true} title={'Azure Full Stack Project'} techStack={['/techStack/maps.svg','/techStack/js.png','/techStack/html5.png']} />  
+            <PortfolioCard company={'NDA'} isCompanyText={true} title={'Azure Full Stack Project'} techStack={['/techStack/iotcentral.svg','/techStack/digitalTwin.svg','/techStack/react.svg','/techStack/dotnet.svg']} />  
+            <PortfolioCard company={'NDA'} isCompanyText={true} title={'React Project'} techStack={['/techStack/react.svg','/techStack/html5.png','/techStack/css3.png']} />  
+            <PortfolioCard company={'Personal'} isCompanyText={true} title={'Face Detection Haar Cascade'} techStack={['/techStack/python.svg','/techStack/opencv.svg']} repoLink={'https://github.com/cassidyRonan/FaceHugger'} />  
+            <PortfolioCard company={'Advanced NDT Solutions'} companyLogo={'/experienceLogos/ans.jpg'} projectLogo={'/projectImages/IMSLogo.png'} isCompanyText={false} techStack={['/techStack/dotnet.svg']} />  
+            <PortfolioCard company={'IT Sligo'} companyLogo={'/certificationProviders/itSligo.png'} isCompanyText={false} projectLogo={'/projectImages/ARKnightLogo.png'}  techStack={['/techStack/Unity.svg','/techStack/dotnet.svg','/techStack/arcore.png']} />  
+            <PortfolioCard company={'IT Sligo'} companyLogo={'/certificationProviders/itSligo.png'} isCompanyText={false} projectLogo={'/projectImages/CrescentMoonTitleLogo.png'} techStack={['/techStack/Unity.svg','/techStack/dotnet.svg']} />  
+            <PortfolioCard company={'IT Sligo'} companyLogo={'/certificationProviders/itSligo.png'} isCompanyText={false} title={'Ghibli Movie Night Planner'} techStack={['/techStack/discord.svg','/techStack/dotnet.svg']} repoLink={'https://github.com/cassidyRonan/Ghibli-Planner'}/>  
+            <PortfolioCard company={'IT Sligo'} companyLogo={'/certificationProviders/itSligo.png'} isCompanyText={false} title={'Mech Commander VR'} techStack={['/techStack/Unity.svg','/techStack/steamvr.png','/techStack/dotnet.svg']} repoLink={'https://github.com/cassidyRonan/MechCommanderVR'} />  
+            <PortfolioCard company={'IT Sligo'} companyLogo={'/certificationProviders/itSligo.png'} isCompanyText={false} title={'Guess That Pokemon?'} techStack={['/techStack/Unity.svg','/techStack/dotnet.svg']} />  
+            <PortfolioCard company={'IT Sligo'} companyLogo={'/certificationProviders/itSligo.png'} isCompanyText={false} projectLogo={'/projectImages/glitchedLogo.png'} techStack={['/techStack/Unity.svg','/techStack/dotnet.svg']} repoLink={'https://github.com/cassidyRonan/Glitched-Game'} />  
+          </div>
+
+        </div>
       
       </main>
 
