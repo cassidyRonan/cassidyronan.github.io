@@ -39,12 +39,12 @@ export default class PortfolioCard extends Component {
                 <div className={styles.portfolioStackContainer}>
                     {
                         this.props.techStack ? 
-                        (this.props.techStack.map((tech) => (<img src={tech} className={styles.portfolioStackImage} />)))
+                        (this.props.techStack.map((tech) => (<img src={tech} key={tech} className={styles.portfolioStackImage} />)))
                         : (<></>)
                     }
                 </div>
 
-                {this.props.repoLink ? (<a className={styles.portfolioCardButton} href={this.props.repoLink} target="_blank">View Repository</a>) : (<></>)}
+                {this.props.repoLink ? (<a className={styles.portfolioCardButton} href={this.props.repoLink} >View Repository</a>) : (<></>)}
 
             </div>
 
