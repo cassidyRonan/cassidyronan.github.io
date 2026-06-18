@@ -1,0 +1,178 @@
+.aboutCards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .statCard{
+    background-color: #ffffff1f;
+    min-width: 300px;
+    min-height: 500px;
+    margin: 10px;
+  }
+
+
+  .mainHero{
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url('./assets/CodeBackdrop.png');
+    background-repeat: repeat;
+    background-size:30vw;
+    position: relative;
+  }
+
+  .heroArrow{
+    font-size: 10vw;
+  }
+  
+  
+  .heroBlock{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutBlock{
+    background-color: #00B0FF;
+    padding: 10px;
+    color: black;
+    padding-top: 25px;
+    font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 1em;  
+  }
+
+  .memberBlock{
+    background-color: #151517;
+    padding: 10px;
+    color: white;
+    padding-top: 25px;
+    font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    padding: 70px;
+    font-size: 25px;  
+  }
+
+ 
+  @media only screen and (max-width: 600px) {
+    .mainHero {
+       flex-direction: column;
+    }
+
+    .heroName{
+      font-size: 17.5vw !important;
+    }
+    
+    .heroRole{
+      font-size: 5.5vw !important;
+    }
+
+    .heroCompany{
+      font-size: 5.5vw !important;
+    }
+
+    .heroArrow{
+      font-size: 27vw !important;
+    }
+
+    .heroBlock{
+      width: 100%;
+      align-items: end !important;
+    }
+
+    .heroText{
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    .heroIcon{
+      height: 5vw !important;
+    }
+
+  }
+
+  .heroText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    flex: 1;
+  }
+
+  .heroName{
+    color: #00B0FF;
+    font-size: 8.5vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .heroName span{
+    color: #F57C00;
+  }
+
+  .heroRole{
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
+  }
+
+  .heroCompany{
+    font-size: 2.5vw;
+    color: #00B0FF;
+    background-color: white;
+    border-radius: 1vw;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .heroIconBar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 0.7vw;
+    background-color: #00000073;
+    border-radius: 100vw;
+  }
+
+  .heroIcon{
+    height: 2vw;
+    margin: 10px;
+  }
+
+  .heroActionCall{
+    margin-top: 15px;
+    border-color: transparent;
+    padding: 1.5vw;
+    border-radius: 15px;
+    font-size: 2.5vw;
+  }
+
+
+  .curvedTopBlue{
+      height: 75px;
+      background: #00B0FF;
+      clip-path: ellipse(60% 100% at bottom);
+      width: 100%;
+      margin-top: -45px;
+  }
+  
+  .curvedBottomBlue{
+      height: 75px;
+      background: #00B0FF;
+      clip-path: ellipse(60% 70% at top);
+      width: 100%;
+  }

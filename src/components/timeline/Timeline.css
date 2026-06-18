@@ -1,0 +1,39 @@
+.timeline-container{
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .timeline-container::after {
+    left: 31px;
+    }
+
+    .timeline-container{
+        position: unset;
+        margin: 0 auto;
+    }
+
+    .timeline-container::after {
+        background-color: transparent;
+    }
+}
+
+.timeline-item{
+    padding: 10px 40px;
+    position: relative;
+    background-color: antiquewhite;
+    width: 50%;
+}
